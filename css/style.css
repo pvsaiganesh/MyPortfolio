@@ -915,3 +915,6 @@ textarea {
     top: 27px;
   }
 }
+.button-placement {
+  text-align: center;
+}
