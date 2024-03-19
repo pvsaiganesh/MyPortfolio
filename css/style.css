@@ -918,3 +918,16 @@ textarea {
 .button-placement {
   text-align: center;
 }
+
+.gmail-container {
+  text-transform: lowercase;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.gmail-container-2 {
+  text-transform: lowercase;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
