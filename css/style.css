@@ -1004,7 +1004,6 @@ textarea {
   border-color: white transparent transparent transparent;
 }
 
-
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   visibility: visible;
@@ -1013,4 +1012,9 @@ textarea {
 .tooltip:active .tooltiptext2 {
   visibility: visible;
   opacity: 1;
+}
+.projects__row-img-2 {
+  width: 30%;
+  display: block;
+  object-fit: cover;
 }
