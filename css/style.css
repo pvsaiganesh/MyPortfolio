@@ -1015,7 +1015,6 @@ textarea {
 }
 .projects__row-img-2 {
   width: 30%;
-  display: block;
   object-fit: cover;
 }
 .screenshots-jobs-portal {
