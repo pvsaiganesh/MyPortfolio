@@ -1018,3 +1018,8 @@ textarea {
   display: block;
   object-fit: cover;
 }
+.screenshots-jobs-portal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
