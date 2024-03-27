@@ -1022,3 +1022,7 @@ textarea {
   flex-direction: row;
   justify-content: space-around;
 }
+.skill-icon {
+  height: 6rem;
+  width: 6rem;
+}
