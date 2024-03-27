@@ -321,11 +321,11 @@ textarea {
 .about {
   background: #fafafa;
 }
-.about__content {
-  /* display: grid;
+/* .about__content { */
+/* display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10rem; } */
-}
+/* } */
 @media only screen and (max-width: 56.25em) {
   .about__content {
     grid-template-columns: 1fr;
