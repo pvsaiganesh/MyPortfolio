@@ -1028,7 +1028,7 @@ textarea {
 }
 @media only screen and (max-width: 56.25em) {
   .skill-icon {
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
   }
 }
