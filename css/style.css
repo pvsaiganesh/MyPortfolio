@@ -1034,4 +1034,5 @@ textarea {
 }
 .dp {
   border-radius: 20px;
+  box-shadow: 8px 16px 16px hsl(0deg 0% 0% / 0.25);
 }
