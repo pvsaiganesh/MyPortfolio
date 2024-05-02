@@ -1032,3 +1032,6 @@ textarea {
     width: 3rem;
   }
 }
+.dp {
+  border-radius: 20px;
+}
