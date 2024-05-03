@@ -1035,6 +1035,7 @@ textarea {
   width: 30rem;
   margin-right: 5rem;
   height: 50rem;
+  transition: transform 0.2s;
 }
 .intro-container {
   display: flex;
@@ -1065,4 +1066,7 @@ textarea {
 .intro-text {
   text-align: left;
   padding: 10px;
+}
+.dp:hover {
+  transform: scale(1.1);
 }
