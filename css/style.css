@@ -375,11 +375,15 @@ textarea {
 }
 .projects__row-img-cont {
   overflow: hidden;
+  transition: transform 0.2s;
 }
 .projects__row-img {
   width: 100%;
   display: block;
   object-fit: cover;
+}
+.projects__row-img-cont:hover {
+  transform: scale(1.1);
 }
 .projects__row-content {
   padding: 2rem 0;
@@ -1020,7 +1024,12 @@ textarea {
 .skill-icon {
   height: 8rem;
   width: 9rem;
+  transition: transform 0.1s;
 }
+.skill-icon:hover {
+  transform: scale(1.2);
+}
+
 @media only screen and (max-width: 56.25em) {
   .skill-icon {
     height: 3rem;
@@ -1061,6 +1070,9 @@ textarea {
     width: 20rem;
     height: 30rem;
     margin-right: 0rem;
+  }
+  .home-hero__cta {
+    text-align: center;
   }
 }
 .intro-text {
