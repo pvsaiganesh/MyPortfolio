@@ -915,6 +915,9 @@ textarea {
 }
 .button-placement {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .gmail-container {
@@ -1086,4 +1089,7 @@ textarea {
 }
 .dp:hover {
   transform: scale(1.1);
+}
+.space-right {
+  margin-right: 20px;
 }
