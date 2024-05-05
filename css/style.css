@@ -298,7 +298,6 @@ textarea {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -306,7 +305,7 @@ textarea {
 
 .home-hero__info {
   margin: 3rem auto 0 auto;
-  max-width: 80rem;
+  max-width: 90rem;
 }
 .home-hero__cta {
   margin-top: 5rem;
@@ -1041,16 +1040,16 @@ textarea {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  width: 30rem;
+  width: 55rem;
   margin-right: 5rem;
-  height: 50rem;
+  height: 55rem;
   transition: transform 0.2s;
 }
 .intro-container {
   display: flex;
   flex-direction: row;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 50em) {
   .home-hero__content {
     padding: 19rem 0 13rem 0;
     margin: auto;
@@ -1062,16 +1061,22 @@ textarea {
     align-items: center;
     gap: 20px;
   }
+  .heading-primary {
+    text-align: center;
+  }
   .dp {
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    width: 25rem;
-    height: 35rem;
+    width: 30rem;
+    height: 30rem;
     margin-right: 0rem;
   }
   .home-hero__cta {
+    text-align: center;
+  }
+  .text-primary {
     text-align: center;
   }
 }
