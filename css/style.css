@@ -1444,3 +1444,7 @@ header p {
     text-align: left;
   }
 }
+.my-logo {
+  height: 80px;
+  width: 300px;
+}
