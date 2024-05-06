@@ -380,6 +380,7 @@ textarea {
   width: 100%;
   display: block;
   object-fit: cover;
+  border-radius: 20px;
 }
 .projects__row-img-cont:hover {
   transform: scale(1.1);
@@ -1014,7 +1015,7 @@ textarea {
   opacity: 1;
 }
 .projects__row-img-2 {
-  width: 30%;
+  width: 25%;
   object-fit: cover;
 }
 .screenshots-jobs-portal {
@@ -1446,4 +1447,8 @@ header p {
 .my-logo {
   height: 80px;
   width: 300px;
+}
+.mobile-screenshots {
+  display: flex;
+  flex-direction: row;
 }
