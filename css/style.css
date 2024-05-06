@@ -1257,6 +1257,7 @@ header p {
   padding: 6px 10px;
   text-align: left;
   border-radius: 5px;
+  font-size: 2rem;
 }
 
 .direction-l .flag:after,
@@ -1321,6 +1322,7 @@ header p {
   -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
   z-index: 15;
+  font-size: 1.3rem;
 }
 
 .direction-l .desc,
@@ -1376,7 +1378,7 @@ header p {
   }
 
   .flag {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
   .direction-l .flag:after {
@@ -1423,21 +1425,21 @@ header p {
 
 @media (min-width: 992px) {
   .timeline {
-    width: 800px;
+    width: 1000px;
     margin: 0 auto;
     margin-top: 20px;
   }
 
   .direction-l {
     position: relative;
-    width: 380px;
+    width: 480px;
     float: left;
     text-align: right;
   }
 
   .direction-r {
     position: relative;
-    width: 380px;
+    width: 480px;
     float: right;
     text-align: left;
   }
