@@ -676,10 +676,8 @@ textarea {
   color: #0062b9;
 }
 .header__logo-img-cont {
-  width: 20rem;
-  height: 7rem;
-  overflow: hidden;
-  background: #0062b9;
+  font-size: 2rem;
+  background: #fff;
   border-radius: 10px;
 }
 @media only screen and (max-width: 56.25em) {
