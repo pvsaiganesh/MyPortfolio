@@ -684,8 +684,8 @@ textarea {
 }
 @media only screen and (max-width: 56.25em) {
   .header__logo-img-cont {
-    width: 20rem;
-    height: 5.5rem;
+    /* width: 20rem;
+    height: 5.5rem; */
     margin-right: 1.2rem;
   }
 }
