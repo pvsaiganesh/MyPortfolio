@@ -677,6 +677,8 @@ textarea {
 }
 .header__logo-img-cont {
   font-size: 2rem;
+  height: 6rem;
+  width: 20rem;
   background: #fff;
   border-radius: 10px;
 }
