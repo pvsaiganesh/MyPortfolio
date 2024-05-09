@@ -768,13 +768,18 @@ textarea {
   }
 }
 .header__sm-menu-link a {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
   text-decoration: none;
   padding: 2.5rem 3rem;
   font-size: 1.6rem;
   color: #333;
-  text-align: right;
-  border-bottom: 1px solid #eee;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #eee;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
