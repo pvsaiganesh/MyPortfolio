@@ -1458,3 +1458,9 @@ header p {
   display: flex;
   flex-direction: row;
 }
+.header__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
