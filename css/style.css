@@ -413,6 +413,7 @@ textarea {
   max-width: 60rem;
   line-height: 1.7;
   margin-bottom: 3rem;
+  text-align: left;
 }
 @media only screen and (max-width: 37.5em) {
   .projects__row-content-desc {
