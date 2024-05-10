@@ -770,14 +770,14 @@ textarea {
 .header__sm-menu-link a {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: baseline;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
   text-decoration: none;
   padding: 2.5rem 3rem;
   font-size: 1.6rem;
   color: #333;
-  text-align: center;
+  text-align: left;
   width: 100%;
   border: 1px solid #eee;
   font-weight: 700;
@@ -1060,7 +1060,7 @@ textarea {
 }
 @media only screen and (max-width: 40em) {
   .home-hero__content {
-    padding: 13rem 0 13rem 0;
+    padding: 10rem 0 10rem 0;
     margin: auto;
     position: static;
     transform: translate(0, 0);
@@ -1094,7 +1094,7 @@ textarea {
   padding: 10px;
 }
 .dp:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .space-right {
   margin-right: 20px;
