@@ -750,14 +750,14 @@ textarea {
 .header__sm-menu {
   background: #fff;
   position: absolute;
-  width: 100%;
+  width: 20%;
   top: 100%;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.3s;
-  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  /* transition: all 0.3s; */
+  /* box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1); */
 }
 .header__sm-menu--active {
   visibility: hidden;
@@ -772,23 +772,24 @@ textarea {
 .header__sm-menu-link a {
   display: flex;
   flex-direction: row;
-  justify-content: baseline;
-  align-items: center;
-  gap: 50px;
+  justify-content: flex-end;
+  /* align-items: center; */
+  /* gap: 50px; */
   text-decoration: none;
-  padding: 2.5rem 3rem;
+  padding: 1.5rem 2rem 2rem 5rem;
   font-size: 1.6rem;
   color: #333;
   text-align: left;
-  width: 100%;
+  width: 10%;
   border: 1px solid #eee;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  transition: color 0.3s;
+  /* transition: color 0.3s; */
 }
 .header__sm-menu-link a:hover {
-  color: #0062b9;
+  /* box-shadow: 10px 10px #0062b9; */
+  transform: scale(1.2);
 }
 .header__sm-menu-link:first-child a {
   border-top: 1px solid #eee;
@@ -1490,4 +1491,16 @@ header p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.white-icon {
+  color: white;
+}
+.noscale-image {
+  transform: none;
+}
+.menu-icon {
+  transition: transform 0.1s;
+}
+.menu-icon:hover {
+  transform: scale(1.5);
 }
