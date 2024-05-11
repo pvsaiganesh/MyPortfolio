@@ -1086,7 +1086,7 @@ textarea {
   }
   .dp-2 {
     display: block;
-    border-radius: 15px;
+    border-radius: 5px;
     width: 15rem;
     height: 23rem;
     box-shadow: inset 0 0 10px #f8a100;
