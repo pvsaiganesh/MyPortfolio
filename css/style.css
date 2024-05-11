@@ -747,7 +747,7 @@ textarea {
     display: none;
   }
   .header {
-    width: 8rem;
+    width: 9rem;
   }
 }
 .header__main-ham-menu {
@@ -794,7 +794,7 @@ textarea {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  opacity: 0.4;
+  opacity: 0.5;
   /* transition: color 0.3s; */
 }
 .header__sm-menu-link a:hover {
@@ -1513,5 +1513,5 @@ header p {
   transition: transform 0.1s;
 }
 .menu-icon:hover {
-  transform: scale(1.5);
+  transform: scale(1.4);
 }
