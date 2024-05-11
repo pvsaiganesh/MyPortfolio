@@ -1071,9 +1071,11 @@ textarea {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 30px;
+  max-width: 20rem;
 }
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 37em) {
   .contact-buttons {
     flex-direction: column;
   }
@@ -1482,4 +1484,10 @@ header p {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+.flex-settings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
