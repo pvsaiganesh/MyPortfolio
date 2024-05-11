@@ -1066,7 +1066,17 @@ textarea {
 .dp-2 {
   display: none;
 }
+.contact-buttons {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
 @media only screen and (max-width: 40em) {
+  .contact-buttons {
+    flex-direction: column;
+  }
   .home-hero__content {
     padding: 13rem 0 10rem 0;
     margin: auto;
