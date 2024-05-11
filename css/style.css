@@ -737,7 +737,7 @@ textarea {
 .header__main-ham-menu-cont {
   display: none;
   width: 3rem;
-  padding: 2.2rem 0;
+  padding: 2.2rem 0 0 0rem;
 }
 @media only screen and (max-width: 37.5em) {
   .header__main-ham-menu-cont {
@@ -747,7 +747,10 @@ textarea {
     display: none;
   }
   .header {
-    width: 9rem;
+    width: 12rem;
+  }
+  .header__content {
+    justify-content: flex-start;
   }
 }
 .header__main-ham-menu {
@@ -781,15 +784,15 @@ textarea {
 .header__sm-menu-link a {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   /* align-items: center; */
   /* gap: 50px; */
   text-decoration: none;
-  padding: 1.5rem 2rem 2rem 5rem;
+  padding: 2rem;
   font-size: 1.6rem;
   color: #333;
   text-align: left;
-  width: 10%;
+  width: 100%;
   /* border-bottom: 1px solid #eee; */
   font-weight: 700;
   text-transform: uppercase;
@@ -1513,5 +1516,5 @@ header p {
   transition: transform 0.1s;
 }
 .menu-icon:hover {
-  transform: scale(1.4);
+  transform: scale(1.2);
 }
