@@ -711,6 +711,9 @@ textarea {
   .header__links {
     display: none;
   }
+  .header {
+    background: transparent;
+  }
 }
 .header__link {
   padding: 2.2rem 3rem;
@@ -744,7 +747,7 @@ textarea {
     display: none;
   }
   .header {
-    width: 7rem;
+    width: 8rem;
   }
 }
 .header__main-ham-menu {
@@ -754,7 +757,7 @@ textarea {
   width: 100%;
 }
 .header__sm-menu {
-  background: #fff;
+  background: transparent;
   position: absolute;
   width: 100%;
   top: 100%;
@@ -787,18 +790,20 @@ textarea {
   color: #333;
   text-align: left;
   width: 10%;
-  border-bottom: 1px solid #eee;
+  /* border-bottom: 1px solid #eee; */
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
+  opacity: 0.4;
   /* transition: color 0.3s; */
 }
 .header__sm-menu-link a:hover {
+  opacity: 1;
   /* box-shadow: 10px 10px #0062b9; */
   /* transform: scale(1.2); */
 }
 .header__sm-menu-link:first-child a {
-  border-top: 1px solid #eee;
+  /* border-top: 1px solid #eee; */
 }
 .header__sm-menu-link-last {
   border-bottom: 0;
