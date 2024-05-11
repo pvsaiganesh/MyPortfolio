@@ -781,7 +781,7 @@ textarea {
   color: #333;
   text-align: left;
   width: 10%;
-  border: 1px solid #eee;
+  border-bottom: 1px solid #eee;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -789,7 +789,7 @@ textarea {
 }
 .header__sm-menu-link a:hover {
   /* box-shadow: 10px 10px #0062b9; */
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
 }
 .header__sm-menu-link:first-child a {
   border-top: 1px solid #eee;
