@@ -742,6 +742,7 @@ textarea {
 @media only screen and (max-width: 37.5em) {
   .header__main-ham-menu-cont {
     display: block;
+    cursor: pointer;
   }
   .header__logo-container {
     display: none;
