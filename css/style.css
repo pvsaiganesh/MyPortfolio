@@ -183,7 +183,7 @@ textarea {
   transition: transform 0.3s;
 }
 .btn:hover {
-  transform: translateY(-30px);
+  transform: translateY(-20px);
 }
 .btn--bg {
   padding: 1.5rem 8rem;
@@ -1517,5 +1517,5 @@ header p {
   transform: scale(1.2);
 }
 .pad-md {
-  padding: 2rem;
+  padding: 4rem;
 }
