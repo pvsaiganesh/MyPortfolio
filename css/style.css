@@ -183,7 +183,7 @@ textarea {
   transition: transform 0.3s;
 }
 .btn:hover {
-  transform: translateY(-3px);
+  transform: translateY(-30px);
 }
 .btn--bg {
   padding: 1.5rem 8rem;
@@ -375,7 +375,6 @@ textarea {
 }
 .projects__row-img-cont {
   overflow: hidden;
-  transition: transform 0.2s;
 }
 .projects__row-img {
   width: 100%;
@@ -383,9 +382,7 @@ textarea {
   object-fit: cover;
   border-radius: 10px;
 }
-.projects__row-img-cont:hover {
-  transform: scale(1.1);
-}
+
 .projects__row-content {
   padding: 2rem 0;
   display: flex;
@@ -1518,4 +1515,7 @@ header p {
 }
 .menu-icon:hover {
   transform: scale(1.2);
+}
+.pad-md {
+  padding: 2rem;
 }
