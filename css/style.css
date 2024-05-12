@@ -1519,3 +1519,6 @@ header p {
 .pad-md {
   padding: 4rem;
 }
+.text-lower {
+  text-transform: lowercase;
+}
