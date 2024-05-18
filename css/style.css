@@ -753,15 +753,9 @@ textarea {
 }
 .header__main-ham-menu {
   width: 100%;
-  background-color: #fff;
-  border-radius: 150px;
-  padding: 0.5rem;
 }
 .header__main-ham-menu-close {
   width: 100%;
-  background-color: #fff;
-  border-radius: 150px;
-  padding: 0.5rem;
 }
 .header__sm-menu {
   background: transparent;
