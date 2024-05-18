@@ -753,9 +753,15 @@ textarea {
 }
 .header__main-ham-menu {
   width: 100%;
+  background-color: #fff;
+  border-radius: 150px;
+  padding: 1rem;
 }
 .header__main-ham-menu-close {
   width: 100%;
+  background-color: #fff;
+  border-radius: 150px;
+  padding: 1rem;
 }
 .header__sm-menu {
   background: transparent;
@@ -1066,7 +1072,7 @@ textarea {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
   /* filter: drop-shadow(1rem 1rem 1rem #0062b9); */
   /* box-shadow: 10px 10px #0062b9; */
-  box-shadow: inset 0 0 10px #f8a100;
+  box-shadow: outset 0 0 10px #f8a100;
   width: 35rem;
   margin-right: 5rem;
   height: 50rem;
@@ -1114,7 +1120,7 @@ textarea {
     border-radius: 5px;
     width: 15rem;
     height: 23rem;
-    box-shadow: inset 0 0 10px #f8a100;
+    box-shadow: outset 0 0 10px #f8a100;
   }
   .home-hero__cta {
     text-align: center;
