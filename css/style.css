@@ -178,12 +178,11 @@ textarea {
   letter-spacing: 2px;
   display: inline-block;
   font-weight: 700;
-  border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   transition: transform 0.3s;
 }
 .btn:hover {
-  transform: translateY(-20px);
+  transform: translateY(+20px);
 }
 .btn--bg {
   padding: 1.5rem 8rem;
@@ -380,7 +379,6 @@ textarea {
   width: 100%;
   display: block;
   object-fit: cover;
-  border-radius: 10px;
 }
 
 .projects__row-content {
