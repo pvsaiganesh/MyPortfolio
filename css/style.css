@@ -1517,8 +1517,12 @@ header p {
   transform: scale(1.2);
 }
 .pad-md {
-  padding: 4rem;
+  padding: 2rem;
+  width: 100%;
 }
 .text-lower {
   text-transform: lowercase;
+}
+.text-center {
+  text-align: center;
 }
