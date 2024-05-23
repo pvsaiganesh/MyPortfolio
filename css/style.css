@@ -885,7 +885,11 @@ textarea {
   justify-content: center;
   flex-wrap: wrap;
 }
+.skills:hover > :not(:hover) {
+  opacity: 0.4;
+}
 .skills__skill {
+  transition: opacity 0.6s ease;
   padding: 2rem;
   margin-bottom: 1.5rem;
   margin-right: 1.5rem;
