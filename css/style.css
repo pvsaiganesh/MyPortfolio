@@ -666,9 +666,9 @@ textarea {
   color: #333;
   transition: color 0.3s;
 }
-.header__logo-container:hover {
+/* .header__logo-container:hover {
   color: #0062b9;
-}
+} */
 .header__logo-img-cont {
   font-size: 2rem;
   height: 5rem;
@@ -729,21 +729,21 @@ textarea {
 .header__main-ham-menu-cont {
   display: none;
   width: 3rem;
-  padding: 2.2rem 0 0 0rem;
+  /* padding: 2.2rem 0 0 0rem; */
 }
 @media only screen and (max-width: 37.5em) {
   .header__main-ham-menu-cont {
     display: block;
     cursor: pointer;
   }
-  .header__logo-container {
+  /* .header__logo-container {
     display: none;
-  }
+  } */
   .header {
-    width: 7rem;
+    width: 100%;
   }
   .header__content {
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 }
 .header__main-ham-menu {
