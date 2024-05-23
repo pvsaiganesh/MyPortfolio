@@ -239,10 +239,10 @@ textarea {
       rgba(0, 98, 185, 0.8)
     ),
     url(../../assets/svg/common-bg.svg);
-  background-position: center;
+  /* background-position: center; */
   height: 100vh;
-  min-height: 80rem;
-  max-height: 120rem;
+  /* min-height: 80rem; */
+  /* max-height: 120rem; */
   position: relative;
 }
 @media only screen and (max-width: 37.5em) {
@@ -298,7 +298,7 @@ textarea {
   flex-direction: row;
   justify-content: space-between;
   align-items: center; */
-  margin-top: 15rem;
+  /* margin-top: 15rem; */
 }
 
 .home-hero__info {
@@ -645,9 +645,8 @@ textarea {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background: #000;
-  background: #fff;
-  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+  background: transparent;
+  /* box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1); */
 }
 .header__content {
   display: flex;
@@ -674,7 +673,7 @@ textarea {
   font-size: 2rem;
   height: 5rem;
   width: 5rem;
-  background: #fff;
+  background: transparent;
   border-radius: 10px;
   margin-right: 1.2rem;
 }
@@ -1067,10 +1066,9 @@ textarea {
   /* filter: drop-shadow(1rem 1rem 1rem #0062b9); */
   /* box-shadow: 10px 10px #0062b9; */
   box-shadow: 8px 16px 16px hsl(0deg 0% 0% / 0.25);
-  width: 35rem;
-  margin-right: 5rem;
-  height: 50rem;
-  transition: transform 0.2s;
+  /* width: 35rem; */
+  /* height: 50rem; */
+  /* transition: transform 0.2s; */
 }
 .intro-container {
   display: flex;
@@ -1110,7 +1108,7 @@ textarea {
     text-align: center;
   }
   .dp {
-    display: none;
+    display: inline-block;
   }
   .dp-2 {
     display: inline;
@@ -1132,9 +1130,9 @@ textarea {
   text-align: left;
   padding: 10px;
 }
-.dp:hover {
+/* .dp:hover {
   transform: scale(1.05);
-}
+} */
 .space-right {
   margin-right: 20px;
 }
