@@ -18,6 +18,12 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -169,25 +175,32 @@
       </div>
     </header>
     <section id="home" class="home-hero">
-      <div class="intro-container">
-        <div class="home-hero__content">
-          <div>
-            <img class="dp" src="../assets/jpeg/profile-pic.jpg" /><img
-              class="dp-2"
-              src="../assets/jpeg/sai-ganesh-dp.jpeg"
-            />
+      <div class="intro-container container flex-settings">
+        <div class="home-hero__content row">
+          <div class="col-12 col-lg-6">
+            <img class="dp" src="../assets/jpeg/profile-pic.jpg" />
+            <div class="text-center">
+              <img class="dp-2" src="../assets/jpeg/sai-ganesh-dp.jpeg" />
+            </div>
           </div>
-          <div class="intro-text">
+          <div class="intro-text col-12 col-lg-6">
             <h1 class="heading-primary">Hey, My name is SAI GANESH</h1>
             <div class="home-hero__info">
-              <p class="text-primary">
+              <p class="text-primary-1">
                 I'm a software developer from Hyderabad, India. I specialize in
                 Frontend development and love to create innovative software
                 solutions. Check out my work or get in touch!
               </p>
             </div>
             <div class="home-hero__cta">
-              <a href="./#projects" class="btn btn--bg ct-btn">Projects</a>
+              <a href="./#projects" class="btn-custom btn--bg ct-btn">
+                <img
+                  class="menu-icon"
+                  height="40px"
+                  width="40px"
+                  src="../assets/png/project.png"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -444,8 +457,8 @@
         <!-- </section> -->
       </div>
     </section>
-    <section id="projects" class="projects sec-pad container">
-      <div class="main-container row">
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-bg">
           <span class="heading-sec__main">Projects</span>
           <span class="heading-sec__sub">
@@ -453,21 +466,22 @@
           </span>
         </h2>
 
-        <div class="projects__content">
-          <div>
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/png/spotify.png"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
+        <div class="projects__content container">
+          <div class="row">
+            <div class="project col-12 col-md-6 p-3">
+              <div class="projects__row-img-cont">
+                <img
+                  src="./assets/png/spotify.png"
+                  alt="Software Screenshot"
+                  class="projects__row-img"
+                  loading="lazy"
+                />
+              </div>
             </div>
-
-            <div class="button-placement">
+            <div class="button-placement col-12 col-md-6 p-3">
               <a
                 href="https://pvsgspotify.ccbp.tech/"
-                class="btn btn--theme pad-md"
+                class="btn-custom btn--theme pad-md"
                 target="_blank"
               >
                 <h3 class="projects__row-content-title">Spotify Clone</h3>
@@ -504,28 +518,20 @@ and intuitive user experience
           </div> -->
               </a>
             </div>
-          </div>
-          <br />
-          <br />
-          <br />
-          <hr />
-          <br />
-          <br />
-          <br />
-          <div>
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/whatsapp-clone.jpg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
+            <div class="project col-12 col-md-6 p-3">
+              <div class="projects__row-img-cont">
+                <img
+                  src="./assets/jpeg/whatsapp-clone.jpg"
+                  alt="Software Screenshot"
+                  class="projects__row-img"
+                  loading="lazy"
+                />
+              </div>
             </div>
-
-            <div class="button-placement">
+            <div class="button-placement col-12 col-md-6 p-3">
               <a
                 href="https://sunny-babka-977efc.netlify.app"
-                class="btn btn--theme pad-md"
+                class="btn-custom btn--theme pad-md"
                 target="_blank"
               >
                 <h3 class="projects__row-content-title">Whatsapp Clone</h3>
@@ -554,29 +560,20 @@ and intuitive user experience
             </div> -->
               </a>
             </div>
-          </div>
-
-          <br />
-          <br />
-          <br />
-          <hr />
-          <br />
-          <br />
-          <br />
-          <div>
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-covid-19.jpg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
+            <div class="project col-12 col-md-6 p-3">
+              <div class="projects__row-img-cont">
+                <img
+                  src="./assets/jpeg/project-covid-19.jpg"
+                  alt="Software Screenshot"
+                  class="projects__row-img"
+                  loading="lazy"
+                />
+              </div>
             </div>
-
-            <div class="button-placement">
+            <div class="button-placement col-12 col-md-6 p-3">
               <a
                 href="https://angry-goldberg-d8806b.netlify.app"
-                class="btn btn--theme pad-md"
+                class="btn-custom btn--theme pad-md"
                 target="_blank"
               >
                 <h3 class="projects__row-content-title">COVID 19 Dashboard</h3>
@@ -604,58 +601,49 @@ Implemented functionalities to view national and state-level data.
           </div> -->
               </a>
             </div>
-          </div>
+            <div class="project col-12 col-md-6 p-3">
+              <div class="projects__row-img-cont">
+                <img
+                  src="./assets/jpeg/jobs-portal-screenshot.png"
+                  alt="Software Screenshot"
+                  class="projects__row-img noscale-image"
+                  loading="lazy"
+                />
 
-          <br />
-          <br />
-          <br />
-          <hr />
-          <br />
-          <br />
-          <br />
-          <div>
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/jobs-portal-screenshot.png"
-                alt="Software Screenshot"
-                class="projects__row-img noscale-image"
-                loading="lazy"
-              />
-
-              <br />
-              <br />
-              <div class="screenshots-jobs-portal">
-                <img
-                  src="./assets/jpeg/screenshot-jobs-portal-1.jpg"
-                  alt="Software Screenshot"
-                  class="projects__row-img-2"
-                  loading="lazy"
-                />
-                <img
-                  src="./assets/jpeg/screenshot-jobs-portal-2.jpg"
-                  alt="Software Screenshot"
-                  class="projects__row-img-2"
-                  loading="lazy"
-                />
-                <img
-                  src="./assets/jpeg/screenshot-jobs-portal-3.jpg"
-                  alt="Software Screenshot"
-                  class="projects__row-img-2"
-                  loading="lazy"
-                />
-                <img
-                  src="./assets/jpeg/screenshot-jobs-portal-4.jpg"
-                  alt="Software Screenshot"
-                  class="projects__row-img-2"
-                  loading="lazy"
-                />
+                <br />
+                <br />
+                <div class="screenshots-jobs-portal">
+                  <img
+                    src="./assets/jpeg/screenshot-jobs-portal-1.jpg"
+                    alt="Software Screenshot"
+                    class="projects__row-img-2"
+                    loading="lazy"
+                  />
+                  <img
+                    src="./assets/jpeg/screenshot-jobs-portal-2.jpg"
+                    alt="Software Screenshot"
+                    class="projects__row-img-2"
+                    loading="lazy"
+                  />
+                  <img
+                    src="./assets/jpeg/screenshot-jobs-portal-3.jpg"
+                    alt="Software Screenshot"
+                    class="projects__row-img-2"
+                    loading="lazy"
+                  />
+                  <img
+                    src="./assets/jpeg/screenshot-jobs-portal-4.jpg"
+                    alt="Software Screenshot"
+                    class="projects__row-img-2"
+                    loading="lazy"
+                  />
+                </div>
               </div>
             </div>
-
-            <div class="button-placement">
+            <div class="button-placement col-12 col-md-6 p-3">
               <a
                 href="https://github.com/pvsaiganesh/JobsPortal-React-Native.git"
-                class="btn btn--theme pad-md"
+                class="btn-custom btn--theme pad-md"
                 target="_blank"
               >
                 <h3 class="projects__row-content-title">
@@ -707,14 +695,7 @@ Smooth scrolling enhances the overall user experience, allowing seamless navigat
           </div> -->
               </a>
             </div>
-          </div>
-
-          <br />
-          <br />
-          <br />
-          <br />
-
-          <!-- <div class="projects__row">
+            <!-- <div class="projects__row">
             <div class="projects__row-img-cont">
               <img
                 src="./assets/jpeg/project-mockup-example.jpeg"
@@ -738,6 +719,7 @@ Smooth scrolling enhances the overall user experience, allowing seamless navigat
               >
             </div>
           </div> -->
+          </div>
         </div>
       </div>
     </section>
@@ -750,56 +732,51 @@ Smooth scrolling enhances the overall user experience, allowing seamless navigat
             meets creativity.
           </span>
         </h2>
-        <div class="projects__row-img-cont">
-          <img
-            src="./assets/png/Dashboard-Designer-Version-5.0-10.png"
-            alt="Software Screenshot"
-            class="projects__row-img noscale-image"
-            loading="lazy"
-          />
-        </div>
-        <div class="button-placement">
-          <a
-            href="https://www.helicalinsight.com/dashboard-designer-version-5-0-getting-started"
-            class="btn btn--theme pad-md"
-            target="_blank"
-          >
-            <div class="text-center">
-              <h3 class="projects__row-content-title">
-                Helical IT Solutions Pvt. Ltd.<br />
-                (Aug 2021 - July 2023)
-              </h3>
-              <p>
-                Designed and developed a new Dashboard Designer module (Version
-                5.0) for Helical Insight, a data visualization platform working
-                as a FRONTEND DEVELOPER.<br />
-              </p>
+        <div class="container">
+          <div class="row">
+            <div class="projects__row-img-cont col-12 col-md-6 p-1">
+              <img
+                src="./assets/png/Dashboard-Designer-Version-5.0-10.png"
+                alt="Software Screenshot"
+                class="projects__row-img noscale-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="button-placement col-12 col-md-6 p-1">
+              <a
+                href="https://www.helicalinsight.com/dashboard-designer-version-5-0-getting-started"
+                class="btn-custom btn--theme pad-md"
+                target="_blank"
+              >
+                <div class="text-center">
+                  <h3 class="projects__row-content-title">
+                    Helical IT Solutions Pvt. Ltd.<br />
+                    (Aug 2021 - July 2023)
+                  </h3>
+                  <p>
+                    Designed and developed a new Dashboard Designer module
+                    (Version 5.0) for Helical Insight, a data visualization
+                    platform working as a FRONTEND DEVELOPER.<br />
+                  </p>
 
-              <!--
+                  <!--
 • Implemented drag-and-drop functionality for effortless report integration within dashboards.<br/>
 • Streamlined filter application and management, enabling automatic response across dependent reports.<br/>
 • Ensured responsive resizing to maintain layout integrity and polished aesthetics across various screen sizes.<br/>
 • Provided granular customization options for headers, shadows, backgrounds, and borders to cater to diverse design
 preferences.<br/>
               </p> -->
-              <!-- <a
+                  <!-- <a
                 href="https://www.helicalinsight.com/dashboard-designer-version-5-0-getting-started"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
                 >Case Study</a
               > -->
+                </div>
+              </a>
             </div>
-          </a>
+          </div>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <hr />
-
-        <!-- </section> -->
       </div>
     </section>
     <section id="contact" class="contact sec-pad dynamicBg">
@@ -812,10 +789,12 @@ preferences.<br/>
           </span>
         </h2>
         <div class="contact-buttons">
-          <a class="btn btn--bg ct-btn" href="mailto:ipvsaiganesh@gmail.com"
+          <a
+            class="btn-custom btn--bg ct-btn"
+            href="mailto:ipvsaiganesh@gmail.com"
             ><img height="35px" width="35px" src="../assets/png/email.png"
           /></a>
-          <a class="btn btn--bg ct-btn" href="tel:+917780531969"
+          <a class="btn-custom btn--bg ct-btn" href="tel:+917780531969"
             ><img
               height="35px"
               width="35px"
@@ -825,7 +804,7 @@ preferences.<br/>
             href="https://drive.google.com/file/d/1p3znTWZmdjQPHCa-wcDOvndlFFkOTRYP/view?usp=sharingf"
             alt="resume"
             download="P V Sai Ganesh"
-            class="btn btn--bg ct-btn"
+            class="btn-custom btn--bg ct-btn"
             target="_blank"
             ><img
               height="35px"
