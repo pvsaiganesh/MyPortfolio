@@ -39,7 +39,7 @@ body {
 
 a {
   text-decoration: none !important;
-  color: white !important;
+  color: black;
 }
 
 li {
@@ -157,7 +157,33 @@ textarea {
   width: 92%;
 }
 
-.btn-custom {
+/* .btn-custom {
+  background-image: linear-gradient(
+    to right,
+    #1f1c2c 0%,
+    #928dab 51%,
+    #1f1c2c 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-custom:hover {
+  background-position: right center; 
+  color: #fff;
+  text-decoration: none;
+} */
+
+/* .btn-custom {
+  
   background: #0062b9;
   color: #fff;
   text-transform: uppercase;
@@ -165,7 +191,7 @@ textarea {
   display: inline-block;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   transition: transform 0.3s;
-}
+} */
 
 .btn--bg {
   padding: 1.5rem 8rem;
@@ -175,6 +201,7 @@ textarea {
   padding: 1.5rem 5rem;
   font-size: 1.3rem;
 }
+
 .btn--theme {
   background: #0062b9;
   color: #fff !important;
@@ -1474,4 +1501,28 @@ header p {
 }
 .ct-btn:hover {
   transform: scale(1.2);
+}
+
+.btn-custom {
+  /* background-image: linear-gradient(to right, #0062b9 0%, #fff 100%); */
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px black;
+  border-radius: 10px;
+  display: block;
+  background-color: rgba(var(#fff), 0.15);
+  border: 1px solid rgba(var(#fff), 0.25);
+  color: rgba(var(#0062b9), 0.8);
+}
+
+.btn-custom:hover {
+  background-position: right center; /* change the direction of the change here */
+  text-decoration: none;
+  background-color: rgba(var(#fff), 0.75);
+  border: 1px solid rgba(var(#fff), 0.75);
+  color: rgba(var(#0062b9), 0.9);
 }
