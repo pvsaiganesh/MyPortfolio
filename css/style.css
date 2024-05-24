@@ -651,8 +651,8 @@ textarea {
 .header__content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1rem 5rem;
+  justify-content: space-around;
+  /* padding: 1rem 5rem; */
 }
 @media only screen and (max-width: 56.25em) {
   .header__content {
@@ -782,7 +782,7 @@ textarea {
   /* align-items: center; */
   /* gap: 50px; */
   text-decoration: none;
-  padding: 2rem;
+  padding: 1rem 0 2rem 1rem;
   font-size: 1.6rem;
   color: #333;
   text-align: right;
@@ -1515,10 +1515,10 @@ header p {
   transform: none;
 }
 .menu-icon {
-  transition: transform 0.1s;
+  /* transition: transform 0.1s; */
 }
 .menu-icon:hover {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 }
 .pad-md {
   padding: 2rem;
