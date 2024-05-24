@@ -38,11 +38,23 @@
   <body>
     <header class="header">
       <div class="header__content p-3 pb-5">
+        <div class="header__main-ham-menu-cont pr-5">
+          <img
+            src="./assets/svg/ham-menu.svg"
+            alt="hamburger menu"
+            class="header__main-ham-menu menu-icon"
+          />
+          <img
+            src="./assets/svg/ham-menu-close.svg"
+            alt="hamburger menu close"
+            class="header__main-ham-menu-close d-none menu-icon"
+          />
+        </div>
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
             <img
-              src="./assets/jpeg/real-profile-pic.jpg"
-              alt="P V Sai Ganesh"
+              src="./assets/jpeg/real-profile-pic.png"
+              alt="Sai"
               class="header__logo-img"
             />
           </div>
@@ -101,21 +113,9 @@
               </a>
             </li>
           </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu menu-icon"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none menu-icon"
-            />
-          </div>
         </div>
       </div>
-      <div class="header__sm-menu">
+      <span class="header__sm-menu">
         <div class="header__sm-menu-content">
           <ul class="header__sm-menu-links">
             <li class="header__sm-menu-link menu-icon">
@@ -172,7 +172,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      </span>
     </header>
     <section id="home" class="home-hero pt-5">
       <div class="intro-container container p-5">
