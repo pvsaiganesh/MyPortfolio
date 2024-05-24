@@ -643,6 +643,7 @@ textarea {
 
 .header {
   position: fixed;
+  height: 10vh;
   width: 100%;
   z-index: 1000;
   background: transparent;
