@@ -244,10 +244,9 @@ textarea {
 .home-hero {
   color: #000;
   background-color: #fff;
-  /* background-image: url(../../assets/jpeg/profile-pic.jpg),
-    url(../../assets/jpeg/bg.jpg);
-  background-size: contain, cover;
-  background-repeat: no-repeat; */
+  background-image: url(../../assets/jpeg/profile-pic.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   /* background: linear-gradient(
     to right,
     rgba(0, 98, 185, 0.8),
@@ -256,11 +255,11 @@ textarea {
   height: 100vh;
 }
 @media only screen and (max-width: 37.5em) {
-  .home-hero {
+  /* .home-hero {
     background-image: url(../../assets/jpeg/profile-pic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-  }
+  } */
 }
 .home-hero__socials {
   position: absolute;
