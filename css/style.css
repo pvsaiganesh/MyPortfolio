@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  box-sizing: border-box;
+  box-sizing: content-box;
   position: relative;
   line-height: 1.5;
   font-family: sans-serif;
@@ -254,7 +254,6 @@ textarea {
     rgba(0, 98, 185, 0.8)
   ); */
   height: 100vh;
-  position: relative;
 }
 @media only screen and (max-width: 37.5em) {
   .home-hero {
