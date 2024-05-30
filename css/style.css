@@ -258,7 +258,7 @@ textarea {
 @media only screen and (max-width: 37.5em) {
   .home-hero {
     background-image: url(../../assets/jpeg/profile-pic.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 }
