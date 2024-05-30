@@ -115,7 +115,7 @@ textarea {
   top: calc(100% + 1.5rem);
   height: 5px;
   width: 3rem;
-  background: #314755;
+  background: #000;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
@@ -184,7 +184,7 @@ textarea {
 
 /* .btn-custom {
   
-  background: #314755;
+  background: #000;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -203,14 +203,14 @@ textarea {
 }
 
 .btn--theme {
-  background: #314755;
+  background: #000;
   color: #fff !important;
   text-decoration: none !important;
 }
 .btn--theme-inv {
-  color: #314755;
+  color: #000;
   background: #fff;
-  border: 2px solid #314755;
+  border: 2px solid #000;
   box-shadow: none;
   padding: calc(1.5rem - 2px) calc(5rem - 2px);
 }
@@ -711,7 +711,7 @@ textarea {
   transition: color 0.3s;
 }
 .header__link:hover {
-  color: #314755;
+  color: #000;
 }
 @media only screen and (max-width: 56.25em) {
   .header__link {
@@ -1222,7 +1222,7 @@ header p {
   width: 16px;
   height: 10px;
   position: absolute;
-  background: #314755;
+  background: #000;
   z-index: 5;
   left: 0;
   right: 0;
@@ -1233,7 +1233,7 @@ header p {
 }
 
 .timeline .hexa:before {
-  border-bottom: 4px solid #314755;
+  border-bottom: 4px solid #000;
   border-left-width: 8px;
   border-right-width: 8px;
   top: -4px;
@@ -1242,7 +1242,7 @@ header p {
 .timeline .hexa:after {
   border-left-width: 8px;
   border-right-width: 8px;
-  border-top: 4px solid #314755;
+  border-top: 4px solid #000;
   bottom: -4px;
 }
 
@@ -1318,7 +1318,7 @@ header p {
 }
 
 .time {
-  background: #314755;
+  background: #000;
   display: inline-block;
   padding: 8px;
 }
@@ -1513,9 +1513,9 @@ header p {
 .btn-custom {
   /* background-image: linear-gradient(
     to right,
-    #314755 0%,
+    #000 0%,
     #26a0da 51%,
-    #314755 100%
+    #000 100%
   ); */
   background-color: #000;
   margin: 10px;
