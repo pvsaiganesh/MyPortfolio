@@ -242,12 +242,12 @@ textarea {
 }
 
 .home-hero {
-  color: #fff;
-
-  background-image: url(../../assets/jpeg/profile-pic.jpg),
+  color: #000;
+  background-color: #fff;
+  /* background-image: url(../../assets/jpeg/profile-pic.jpg),
     url(../../assets/jpeg/bg.jpg);
   background-size: contain, cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   /* background: linear-gradient(
     to right,
     rgba(0, 98, 185, 0.8),
