@@ -1533,5 +1533,8 @@ header p {
   height: 100vh;
 }
 .home-image {
-  margin-top: 15rem;
+  margin-top: 10rem;
+}
+.rounded-custom {
+  border-radius: 60px;
 }
