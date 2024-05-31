@@ -384,7 +384,7 @@ textarea {
 }
 @media only screen and (max-width: 37.5em) {
   .projects__row-content-title {
-    font-size: 2.4rem;
+    font-size: 1rem;
   }
 }
 .projects__row-content-desc {
