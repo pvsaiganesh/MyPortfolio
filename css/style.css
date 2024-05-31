@@ -639,9 +639,9 @@ textarea {
   padding: 0rem 0 0 1rem;
 }
 @media only screen and (max-width: 56.25em) {
-  .header__content {
-    justify-content: space-around;
-  }
+  /* .header__content {
+    justify-content: space-bet;
+  } */
 }
 .header__logo-container {
   display: flex;
