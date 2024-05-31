@@ -622,7 +622,7 @@ textarea {
 
 .header {
   position: fixed;
-  height: 10vh;
+  height: 15vh;
   width: 100%;
   z-index: 1000;
   background: #fff;
