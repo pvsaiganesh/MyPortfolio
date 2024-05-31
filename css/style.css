@@ -732,7 +732,6 @@ textarea {
 .header__sm-menu {
   display: flex;
   flex-direction: row;
-
   background: #fff;
   border-bottom-right-radius: 20px;
   top: 100%;
