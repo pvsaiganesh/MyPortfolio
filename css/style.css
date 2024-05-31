@@ -734,7 +734,7 @@ textarea {
   flex-direction: row;
 
   background: #fff;
-
+  border-bottom-right-radius: 20px;
   top: 100%;
   visibility: hidden;
   opacity: 0;
