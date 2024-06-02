@@ -1545,3 +1545,6 @@ header p {
     margin-bottom: 6rem;
   }
 }
+.bg-white {
+  background-color: #fff;
+}
