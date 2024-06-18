@@ -827,7 +827,7 @@ textarea {
 }
 .main-footer__icon {
   margin-right: 1rem;
-  width: 4.5rem;
+  width: 2.5rem;
 }
 .main-footer__icon--mr-none {
   margin-right: 0;
@@ -1547,4 +1547,7 @@ header p {
 }
 .bg-white {
   background-color: #fff;
+}
+.social {
+  width: 4rem;
 }
