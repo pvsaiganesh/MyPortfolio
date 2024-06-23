@@ -622,7 +622,7 @@ textarea {
 
 .header {
   position: fixed;
-  height: 10vh;
+  height: 11vh;
   width: 100%;
   z-index: 1000;
   background: #fff;
@@ -692,7 +692,7 @@ textarea {
 .header__link {
   padding: 2.2rem 3rem;
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #333;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -827,7 +827,7 @@ textarea {
 }
 .main-footer__icon {
   margin-right: 1rem;
-  width: 3rem;
+  width: 3.5rem;
 }
 .main-footer__icon--mr-none {
   margin-right: 0;
@@ -1547,4 +1547,8 @@ header p {
 }
 .bg-white {
   background-color: #fff;
+}
+.social {
+  width: 26rem;
+  border-top-right-radius: 20px;
 }
