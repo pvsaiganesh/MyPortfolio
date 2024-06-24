@@ -1537,7 +1537,7 @@ header p {
   margin-bottom: 4rem;
 }
 .rounded-custom {
-  border-radius: 60px;
+  border-radius: 15px;
 }
 @media only screen and (max-width: 37.5em) {
   .home-image {
