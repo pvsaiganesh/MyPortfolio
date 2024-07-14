@@ -108,7 +108,14 @@ textarea {
 }
 .heading-sec__main--lt::after {
   content: "";
-  background: #fff !important;
+  /* background: #fff !important; */
+  /* From https://css.glass */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.47);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.7px);
+  -webkit-backdrop-filter: blur(9.7px);
 }
 .heading-sec__main::after {
   content: "";
@@ -116,7 +123,13 @@ textarea {
   top: calc(100% + 1.5rem);
   height: 5px;
   width: 3rem;
-  background: #000;
+  /* background: #000; */
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.47);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.7px);
+  -webkit-backdrop-filter: blur(9.7px);
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
@@ -409,6 +422,12 @@ textarea {
     ),
     url(../../assets/svg/common-bg.svg); */
   background-color: #000;
+  /* From https://css.glass */
+  /* background: rgba(0, 0, 0, 0.47); */
+  /* border-radius: 16px; */
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  /* backdrop-filter: blur(9.7px); */
+  /* -webkit-backdrop-filter: blur(9.7px); */
 }
 .contact__form-container {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -622,15 +641,21 @@ textarea {
 
 .header {
   position: fixed;
-  height: 11vh;
+  height: 15vh;
   width: 100%;
   z-index: 1000;
-  background: #fff;
+  /* background: #fff; */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.44);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
 }
-.header {
+/* .header {
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
-}
+} */
 
 .header__content {
   display: flex;
@@ -780,6 +805,12 @@ textarea {
 
 .main-footer {
   background: #000;
+  /* From https://css.glass */
+  /* background: rgba(0, 0, 0, 0.47); */
+  /* border-radius: 16px; */
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.7px);
+  -webkit-backdrop-filter: blur(9.7px); */
   color: #fff;
 }
 .main-footer__upper {
@@ -1551,4 +1582,11 @@ header p {
 .social {
   width: 26rem;
   border-top-right-radius: 20px;
+  /* From https://css.glass */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.47);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
 }
