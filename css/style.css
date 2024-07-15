@@ -317,7 +317,12 @@ textarea {
 }
 
 .about {
-  background: #fff;
+  /* background: #fff; */
+  background: rgba(255, 255, 255, 0.47);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
 }
 @media only screen and (max-width: 56.25em) {
   .about__content {
@@ -647,7 +652,7 @@ textarea {
   /* background: #fff; */
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.44);
-  border-radius: 16px;
+  /* border-radius: 16px; */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.1px);
   -webkit-backdrop-filter: blur(8.1px);
@@ -710,7 +715,14 @@ textarea {
     display: none;
   }
   .header {
-    background: #fff;
+    /* background: #fff; */
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.33);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.3px);
+    -webkit-backdrop-filter: blur(9.3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     height: 11vh;
   }
 }
@@ -757,11 +769,19 @@ textarea {
 .header__sm-menu {
   display: flex;
   flex-direction: row;
-  background: #fff;
+  /* background: #fff; */
+  /* border-radius: 16px; */
+
   border-bottom-right-radius: 20px;
   top: 100%;
   visibility: hidden;
   opacity: 0;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.33);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.3px);
+  -webkit-backdrop-filter: blur(9.3px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .header__sm-menu--active {
@@ -1585,7 +1605,7 @@ header p {
   /* From https://css.glass */
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.47);
-  border-radius: 16px;
+  /* border-radius: 16px; */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9.5px);
   -webkit-backdrop-filter: blur(9.5px);
