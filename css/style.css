@@ -646,7 +646,7 @@ textarea {
 
 .header {
   position: fixed;
-  height: 15vh;
+  height: 13vh;
   width: 100%;
   z-index: 1000;
   /* background: #fff; */
@@ -723,7 +723,7 @@ textarea {
     backdrop-filter: blur(9.3px);
     -webkit-backdrop-filter: blur(9.3px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    height: 11vh;
+    height: 9vh;
   }
 }
 .header__link {
@@ -772,6 +772,7 @@ textarea {
   /* background: #fff; */
   /* border-radius: 16px; */
 
+  border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   top: 100%;
   visibility: hidden;
