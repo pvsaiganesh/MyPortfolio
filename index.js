@@ -37,11 +37,11 @@ headerLogoConatiner.addEventListener("click", () => {
   location.href = "index.html";
 });
 
-const gmailEl = document.querySelector(".gmail-container");
-gmailEl.onclick = () => {
-  navigator.clipboard.writeText("ipvsaiganesh@gmail.com");
-};
-const gmailEl2 = document.querySelector(".gmail-container-2");
-gmailEl2.onclick = () => {
-  navigator.clipboard.writeText("+917780531969");
-};
+// const gmailEl = document.querySelector(".gmail-container") || null;
+// gmailEl?.onclick = () => {
+//   navigator.clipboard.writeText("ipvsaiganesh@gmail.com");
+// };
+// const gmailEl2 = document.querySelector(".gmail-container-2") || null;
+// gmailEl2?.onclick  = () => {
+//   navigator.clipboard.writeText("+917780531969");
+// };

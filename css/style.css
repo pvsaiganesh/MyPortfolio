@@ -1611,3 +1611,9 @@ header p {
   backdrop-filter: blur(9.5px);
   -webkit-backdrop-filter: blur(9.5px);
 }
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1f2023;
+    color: #dadada;
+  }
+}
