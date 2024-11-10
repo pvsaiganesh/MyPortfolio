@@ -160,7 +160,7 @@ textarea {
 }
 
 .heading-sm {
-  margin-top: 10rem;
+  margin-top: 0rem;
   font-size: 2.2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -838,7 +838,7 @@ textarea {
 .main-footer__upper {
   display: flex;
   justify-content: space-between;
-  padding: 0rem 0;
+  padding: 3rem 0;
 }
 @media only screen and (max-width: 56.25em) {
   .main-footer__upper {
@@ -1586,7 +1586,7 @@ header p {
   height: 100vh;
 }
 .home-image {
-  margin-top: 10rem;
+  margin-top: 5rem;
   margin-bottom: 4rem;
 }
 .rounded-custom {
@@ -1594,17 +1594,20 @@ header p {
 }
 @media only screen and (max-width: 37.5em) {
   .home-image {
-    margin-top: 15rem;
+    margin-top: 10rem;
     margin-bottom: 0rem;
     height: 10rem;
     width: 10rem;
+  }
+  .heading-sm {
+    margin-top: 10rem;
   }
 }
 .bg-white {
   background-color: #fff;
 }
 .social {
-  width: 26rem;
+  width: 23rem;
   border-top-right-radius: 20px;
   /* From https://css.glass */
   /* From https://css.glass */
