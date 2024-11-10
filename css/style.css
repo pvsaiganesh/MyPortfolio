@@ -1595,12 +1595,12 @@ header p {
 @media only screen and (max-width: 37.5em) {
   .home-image {
     margin-top: 10rem;
-    margin-bottom: 0rem;
-    height: 10rem;
-    width: 10rem;
+    margin-bottom: 5rem;
+    /* height: 10rem; */
+    /* width: 10rem; */
   }
   .heading-sm {
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
 }
 .bg-white {
