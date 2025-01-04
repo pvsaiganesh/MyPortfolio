@@ -1677,14 +1677,7 @@ header p {
     color: #dadada;
   }
 } */
-body {
-  background-color: var(--background-color-light) !important;
-  color: var(--text-color-light) !important;
-}
-.dark-mode {
-  background-color: var(--background-color-dark) !important;
-  color: var(--text-color-dark) !important;
-}
+
 .credit {
   position: fixed;
   right: 2rem;
@@ -1953,4 +1946,12 @@ label {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+body {
+  background-color: var(--background-color-light) !important;
+  color: var(--text-color-light) !important;
+}
+.dark-mode {
+  background-color: var(--background-color-dark) !important;
+  color: var(--text-color-dark) !important;
 }
