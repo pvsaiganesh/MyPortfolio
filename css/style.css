@@ -1921,7 +1921,11 @@ label {
 }
 /* App */
 [type="checkbox"]:checked + .app .body {
-  background-color: #26242E;
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+.dark-mode [type="checkbox"]:checked + .app .body {
+  background-color: var(--background-color-dark);
   color: white;
 }
 /* Circle */
@@ -1929,7 +1933,7 @@ label {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  background: #26242E;
+  background: var(--background-color-dark);
 }
 
 [type="checkbox"]:checked + .app .circle {
@@ -1969,7 +1973,7 @@ label {
 /*   background-color: blue; */
   font-size: 80%;
   opacity: .4;
-  padding: .8rem 1.8rem;
+  padding: 1.8rem .8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
