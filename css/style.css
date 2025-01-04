@@ -1883,7 +1883,11 @@ label {
 }
 /* Toggle */
 .app  {
-  background-color: var(--background-color-light);
+ background: rgba(255, 255, 255, 0.44);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
   position: fixed;
   bottom: 0px;
   
@@ -1896,7 +1900,11 @@ label {
   z-index: 9999999;
 }
 .dark-mode .app {
-  background-color: var(--background-color-dark);
+  background: rgba(255, 255, 255, 0.44);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
 }
 [type="checkbox"]:checked + .app .toggle {
   -webkit-transform: translateX(100%);
