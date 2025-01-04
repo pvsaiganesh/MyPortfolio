@@ -52,8 +52,8 @@ function toggleDarkMode() {
 }
 
 // // On page load
-// document.addEventListener("DOMContentLoaded", (event) => {
-//   if (localStorage.getItem("darkMode") === "enabled") {
-//     document.body.classList.add("dark-mode");
-//   }
-// });
+document.addEventListener("DOMContentLoaded", (event) => {
+  if (localStorage.getItem("darkMode") === "enabled") {
+    document.body.classList.add("dark-mode");
+  }
+});
