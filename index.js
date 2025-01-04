@@ -52,7 +52,7 @@ function toggleDarkMode() {
 }
 
 // // On page load
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("onload", (event) => {
   if (localStorage.getItem("darkMode") === "enabled") {
     document.body.classList.add("dark-mode");
   }
