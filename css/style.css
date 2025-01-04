@@ -1884,6 +1884,12 @@ label {
 /* Toggle */
 .app  {
   background-color: #fff;
+  position: fixed;
+  bottom: 50%;
+  right: 0px;
+  border-top-left-radius: 40px !important;
+  border-bottom-left-radius: 40px !important;
+  z-index: 9999999;
 }
 .dark-mode .app {
   background-color: var(--background-color-dark);
@@ -1918,11 +1924,11 @@ label {
 }
 
 [type="checkbox"]:checked + .app .circle {
-  background: linear-gradient(40deg, #8983F7, #A3DAFB 70%);
+  background: linear-gradient(40deg, #8983F7, #A3DAFB 50%);
 }
 
 [type="checkbox"]:checked + .app .main-circle {
-  background: linear-gradient(40deg, #8983F7, #A3DAFB 70%);
+  background: linear-gradient(40deg, #8983F7, #A3DAFB 50%);
 }
 
 [type="checkbox"]:checked + .time {
