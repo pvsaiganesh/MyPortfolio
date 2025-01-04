@@ -6,7 +6,12 @@
   box-sizing: content-box;
   font-family: inherit;
 }
-
+:root {
+  --background-color-light: #ffffff;
+  --text-color-light: #000000;
+  --background-color-dark: #121212;
+  --text-color-dark: #ffffff;
+}
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -219,8 +224,8 @@ textarea {
 
 .btn--theme {
   background: #000;
-  color: #fff !important;
-  text-decoration: none !important;
+  color: #fff 
+  text-decoration: none 
 }
 .btn--theme-inv {
   color: #000;
@@ -319,7 +324,7 @@ textarea {
 
 .about {
   /* background: #fff; */
-  background: rgba(255, 255, 255, 0.47);
+  /* background: rgba(255, 255, 255, 0.47); */
   /* border-radius: 16px; */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9.5px);
@@ -427,7 +432,7 @@ textarea {
       rgba(0, 98, 185, 0.8)
     ),
     url(../../assets/svg/common-bg.svg); */
-  background-color: #000;
+  background-color: var(--background-color-dark);
   /* From https://css.glass */
   /* background: rgba(0, 0, 0, 0.47); */
   /* border-radius: 16px; */
@@ -851,7 +856,7 @@ textarea {
   }
 }
 .main-footer__row-1 {
-  background-color: #000;
+  background-color: var(--background-color-dark);
   order: 2;
 }
 @media only screen and (max-width: 56.25em) {
@@ -940,7 +945,7 @@ textarea {
   top: 7px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #fff;
+  background-color: var(--background-color-light);
   border-radius: 50%;
   opacity: 1;
   animation: wheel 1.3s infinite;
@@ -969,13 +974,13 @@ textarea {
 
 .gmail-container {
   text-transform: lowercase;
-  background-color: white;
+  background-color: var(--background-color-light);
   color: black;
   cursor: pointer;
 }
 .gmail-container-2 {
   text-transform: lowercase;
-  background-color: white;
+  background-color: var(--background-color-light);
   color: black;
   cursor: pointer;
 }
@@ -989,7 +994,7 @@ textarea {
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
-  background-color: white;
+  background-color: var(--background-color-light);
   color: black;
   text-align: center;
   padding: 5px 0;
@@ -1018,7 +1023,7 @@ textarea {
 .tooltip .tooltiptext2 {
   visibility: hidden;
   width: 120px;
-  background-color: white;
+  background-color: var(--background-color-light);
   color: black;
   text-align: center;
   padding: 5px 0;
@@ -1163,8 +1168,8 @@ header p {
   height: 35px;
   width: 60px;
   font-size: 1.6rem;
-  background: #f0f0f0;
-  color: #3c3c3c;
+  background: var(--background-color-light);
+  color: var(--text-color-light);
   position: relative;
   margin-top: 15px;
 }
@@ -1192,12 +1197,19 @@ header p {
   border-top: 15px solid #f0f0f0;
   bottom: -15px;
 }
-
+.dark-mode .hexa {
+  background: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
 .timeline {
+  /* background-color: var(--background-color-light) !important;
+  color: var(--text-color-light) !important; */
   position: relative;
   padding: 0;
   width: 100%;
   margin-top: 20px;
+  /* padding: 50px; */
+  padding-bottom: 100px;
   list-style-type: none;
 }
 
@@ -1273,9 +1285,18 @@ header p {
   top: -30px;
   margin-top: 0;
 }
+.dark-mode .timeline .hexa {
+  background: var(--background-color-light);
+}
 
 .timeline .hexa:before {
   border-bottom: 4px solid #000;
+  border-left-width: 8px;
+  border-right-width: 8px;
+  top: -4px;
+}
+.dark-mode .timeline .hexa:before {
+  border-bottom: 4px solid #fff;
   border-left-width: 8px;
   border-right-width: 8px;
   top: -4px;
@@ -1287,7 +1308,16 @@ header p {
   border-top: 4px solid #000;
   bottom: -4px;
 }
-
+.dark-mode .timeline .hexa:after {
+  border-left-width: 8px;
+  border-right-width: 8px;
+  border-top: 4px solid #fff;
+  bottom: -4px;
+}
+.dark-mode .timeline {
+  background: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
 .direction-l,
 .direction-r {
   float: none;
@@ -1311,7 +1341,10 @@ header p {
   border-radius: 5px;
   font-size: 2rem;
 }
-
+.dark-mode .flag {
+  background: var(--background-color-dark);
+  color: white;
+}
 .direction-l .flag:after,
 .direction-r .flag:after {
   content: "";
@@ -1348,9 +1381,11 @@ header p {
   z-index: 14;
   line-height: 1em;
   vertical-align: middle;
-  color: #fff;
+  color: var(--text-color-light);
 }
-
+.dark-mode .time-wrapper {
+  color: white;
+}
 .direction-l .time-wrapper {
   float: none;
 }
@@ -1364,6 +1399,10 @@ header p {
   display: inline-block;
   padding: 8px;
 }
+.dark-mode .time {
+  background: var(--background-color-dark);
+  color: white;
+}
 
 .desc {
   position: relative;
@@ -1376,7 +1415,10 @@ header p {
   z-index: 15;
   font-size: 1.3rem;
 }
-
+.dark-mode .desc {
+  background: var(--background-color-dark);
+  color: white;
+}
 .direction-l .desc,
 .direction-r .desc {
   position: relative;
@@ -1545,8 +1587,12 @@ header p {
   opacity: 0.4;
 }
 .ct-btn {
-  background-color: #fff;
+  background-color: var(--background-color-light);
   color: black;
+}
+.dark-mode .ct-btn {
+  background-color: var(--background-color-dark);
+  color: white;
 }
 .ct-btn:hover {
   transform: scale(1.2);
@@ -1559,7 +1605,7 @@ header p {
     #26a0da 51%,
     #000 100%
   ); */
-  background-color: #000;
+  background-color: var(--background-color-dark);
   margin: 10px;
   padding: 15px 45px;
   text-align: center;
@@ -1581,6 +1627,10 @@ header p {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
+}
+.dark-mode .btn-custom {
+  background-color: var(--background-color-light);
+  color: black;
 }
 .intro {
   height: 100vh;
@@ -1604,7 +1654,11 @@ header p {
   }
 }
 .bg-white {
-  background-color: #fff;
+  background-color: var(--background-color-light);
+}
+.dark-mode .bg-white {
+  background-color: var(--background-color-dark) !important;
+  color: var(--text-color-dark) !important;
 }
 .social {
   width: 23rem;
@@ -1617,9 +1671,17 @@ header p {
   backdrop-filter: blur(9.5px);
   -webkit-backdrop-filter: blur(9.5px);
 }
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   body {
     background-color: #1f2023;
     color: #dadada;
   }
+} */
+body {
+  background-color: var(--background-color-light) !important;
+  color: var(--text-color-light) !important;
+}
+.dark-mode {
+  background-color: var(--background-color-dark) !important;
+  color: var(--text-color-dark) !important;
 }
