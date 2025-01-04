@@ -1885,7 +1885,7 @@ label {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background-color: #34323D;
+  background-color: #34323D !important;
 }
 
 [type="checkbox"]:checked + .app .dark {
