@@ -1718,8 +1718,8 @@ header p {
   width: 18rem;
   height: 17rem;
   background-color: inherit;
-  -webkit-box-shadow: 0 4px 35px rgba(0,0,0,.1);
-  box-shadow: 0 4px 35px rgba(0,0,0,.1);
+  /* -webkit-box-shadow: 0 4px 35px rgba(0,0,0,.1); */
+  /* box-shadow: 0 4px 35px rgba(0,0,0,.1); */
   border-radius: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1883,12 +1883,16 @@ label {
 }
 /* Toggle */
 .app  {
-  background-color: #fff;
+  background-color: var(--background-color-light);
   position: fixed;
   bottom: 0px;
+  
   right: 0px;
   border-top-left-radius: 40px !important;
-  border-bottom-left-radius: 40px !important;
+  border-bottom-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+
   z-index: 9999999;
 }
 .dark-mode .app {
