@@ -45,14 +45,14 @@ headerLogoConatiner.addEventListener("click", () => {
 // gmailEl2?.onclick  = () => {
 //   navigator.clipboard.writeText("+917780531969");
 // };
-function toggleDarkMode() {
+function toggleDarkMode(dark) {
   let isDark = document.body.classList.toggle("dark-mode");
-  localStorage.setItem("darkMode", isDark ? "enabled" : "disabled");
+  localStorage.setItem("darkMode", isDark ? "disabled" : "enabled");
 }
 
 // On page load
 document.addEventListener("DOMContentLoaded", (event) => {
-  if (localStorage.getItem("darkMode") === "enabled") {
+  if (localStorage.getItem("darkMode") === "disabled") {
     document.body.classList.add("dark-mode");
   }
 });
