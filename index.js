@@ -45,9 +45,10 @@ headerLogoConatiner.addEventListener("click", () => {
 // gmailEl2?.onclick  = () => {
 //   navigator.clipboard.writeText("+917780531969");
 // };
-function toggleDarkMode(dark) {
-  let isDark = document.body.classList.toggle("dark-mode");
+function toggleDarkMode() {
+  let isDark = document.body.classList.contains("dark-mode");
   localStorage.setItem("darkMode", isDark ? "enabled" : "disabled");
+  document.body.classList.toggle("dark-mode");
 }
 
 // On page load
