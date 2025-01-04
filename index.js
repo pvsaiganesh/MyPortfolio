@@ -47,7 +47,7 @@ headerLogoConatiner.addEventListener("click", () => {
 // };
 function toggleDarkMode(dark) {
   let isDark = document.body.classList.toggle("dark-mode");
-  localStorage.setItem("darkMode", isDark ? "disabled" : "enabled");
+  localStorage.setItem("darkMode", isDark ? "enabled" : "disabled");
 }
 
 // On page load
