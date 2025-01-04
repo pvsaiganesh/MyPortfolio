@@ -1900,7 +1900,7 @@ label {
   z-index: 9999999;
 }
 .dark-mode .app {
-  background: rgba(255, 255, 255, 0.44);
+   background: rgba(255, 255, 255, 0.44);
   /* border-radius: 16px; */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.1px);
@@ -1910,7 +1910,7 @@ label {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background-color: #34323D ;
+  background: rgba(255, 255, 255, 0.44);
 }
 
 [type="checkbox"]:checked + .app .dark {
