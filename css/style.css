@@ -1900,7 +1900,7 @@ label {
   z-index: 9999999;
 }
 .dark-mode .app {
-   background: var(--background-color-dark);
+   background: var(--background-color-light);
   /* border-radius: 16px; */
 }
 [type="checkbox"]:checked + .app .toggle {
