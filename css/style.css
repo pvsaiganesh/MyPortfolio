@@ -1885,7 +1885,7 @@ label {
 .app  {
   background-color: #fff;
   position: fixed;
-  bottom: 50%;
+  bottom: 0px;
   right: 0px;
   border-top-left-radius: 40px !important;
   border-bottom-left-radius: 40px !important;
