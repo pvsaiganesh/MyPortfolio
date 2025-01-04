@@ -1952,8 +1952,12 @@ label {
 }
 
 [type="checkbox"]:checked + .app .body {
-  border-radius: 40px;
-  ;
+  /* border-radius: 40px; */
+  /* ; */
+   border-top-left-radius: 40px !important;
+  border-bottom-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
 }
 
 .menu {
