@@ -46,9 +46,9 @@ headerLogoConatiner.addEventListener("click", () => {
 //   navigator.clipboard.writeText("+917780531969");
 // };
 function toggleDarkMode() {
-  let isDark = document.body.classList.contains("dark-mode");
+  let isDark = document.body.classList.toggle("dark-mode");
   localStorage.setItem("darkMode", isDark ? "enabled" : "disabled");
-  document.body.classList.toggle("dark-mode");
+  // document.body.classList.toggle("dark-mode");
 }
 
 // // On page load
