@@ -1882,11 +1882,14 @@ label {
   display: none;
 }
 /* Toggle */
+.dark-mode .app .toggle {
+  background-color: #fff;
+}
 [type="checkbox"]:checked + .app .toggle {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background-color: #34323D !important;
+  background-color: #34323D ;
 }
 
 [type="checkbox"]:checked + .app .dark {
