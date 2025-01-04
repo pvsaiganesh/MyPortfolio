@@ -1882,8 +1882,11 @@ label {
   display: none;
 }
 /* Toggle */
-.dark-mode .app .toggle {
+.app  {
   background-color: #fff;
+}
+.dark-mode .app {
+  background-color: var(--background-color-dark);
 }
 [type="checkbox"]:checked + .app .toggle {
   -webkit-transform: translateX(100%);
