@@ -1670,7 +1670,7 @@ header p {
   color: var(--text-color-dark) !important;
 }
 .social {
-  width: 23rem;
+  width: 15rem;
   border-top-right-radius: 20px;
   /* From https://css.glass */
   /* From https://css.glass */
@@ -1716,8 +1716,8 @@ header p {
 .phone {
   position: relative;
   z-index: 2;
-  width: 18rem;
-  height: 17rem;
+  width: 13rem;
+  height: 12rem;
   background-color: inherit;
   /* -webkit-box-shadow: 0 4px 35px rgba(0,0,0,.1); */
   /* box-shadow: 0 4px 35px rgba(0,0,0,.1); */
@@ -1786,7 +1786,7 @@ header p {
   flex-direction: column;
   margin: auto;
   text-align: center;
-  width: 70%;
+  width: 90%;
   -webkit-transform: translateY(5%);
   -ms-transform: translateY(5%);
   transform: translateY(5%);
@@ -1795,8 +1795,8 @@ header p {
 .circle {
   position: relative;
   border-radius: 100%;
-  width: 8rem;
-  height: 8rem;
+  width: 6rem;
+  height: 6rem;
   background: linear-gradient(40deg, #FF0080,#FF8C00 70%);
   margin: auto;
 }
@@ -1805,8 +1805,8 @@ header p {
   position: absolute;
   border-radius: 100%;
   right: 0;
-  width: 6rem;
-  height: 6rem;
+  width: 4rem;
+  height: 4rem;
   background: white;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
@@ -1974,7 +1974,7 @@ label {
 /*   background-color: blue; */
   font-size: 80%;
   opacity: .4;
-  padding: 1.8rem .8rem;
+  padding: .8rem .8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
