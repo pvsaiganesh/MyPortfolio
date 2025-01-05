@@ -1948,11 +1948,15 @@ label {
 }
 
 [type="checkbox"]:checked + .app .circle {
+  /* background: linear-gradient(40deg, #8983F7, #A3DAFB 50%); */
   background: linear-gradient(40deg, white, white 50%);
+
 }
 
 [type="checkbox"]:checked + .app .main-circle {
+  /* background: linear-gradient(40deg, #8983F7, #A3DAFB 50%); */
   background: linear-gradient(40deg, white, white 50%);
+
 }
 
 [type="checkbox"]:checked + .time {
