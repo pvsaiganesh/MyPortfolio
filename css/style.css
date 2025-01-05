@@ -733,13 +733,13 @@ textarea {
     display: none;
   }
   .header {
-    /* background: #fff; */
+    background: #fff;
     /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.33);
+    /* background: rgba(255, 255, 255, 0.33); */
     /* border-radius: 16px; */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9.3px);
-    -webkit-backdrop-filter: blur(9.3px);
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    /* backdrop-filter: blur(9.3px); */
+    /* -webkit-backdrop-filter: blur(9.3px); */
     border: 1px solid rgba(255, 255, 255, 0.3);
     height: 7vh;
   }
@@ -787,7 +787,7 @@ textarea {
 .header__sm-menu {
   display: flex;
   flex-direction: row;
-  /* background: #fff; */
+  background: #fff;
   /* border-radius: 16px; */
 
   border-top-right-radius: 20px;
@@ -796,10 +796,10 @@ textarea {
   visibility: hidden;
   opacity: 0;
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.33);
+  /* background: rgba(255, 255, 255, 0.33);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9.3px);
-  -webkit-backdrop-filter: blur(9.3px);
+  -webkit-backdrop-filter: blur(9.3px); */
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -1679,7 +1679,7 @@ header p {
   color: var(--text-color-dark) !important;
 }
 .social {
-  width: 15rem;
+  width: 10rem;
   border-top-right-radius: 20px;
   /* From https://css.glass */
   /* From https://css.glass */
