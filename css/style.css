@@ -843,7 +843,7 @@ textarea {
 }
 
 .main-footer {
-  background: #000;
+  background: var(--background-color-dark);
   /* From https://css.glass */
   /* background: rgba(0, 0, 0, 0.47); */
   /* border-radius: 16px; */
@@ -1808,6 +1808,8 @@ header p {
   width: 6rem;
   height: 6rem;
   background: linear-gradient(40deg, #FF0080,#FF8C00 70%);
+  /* background: linear-gradient(40deg, #F28C38,#F28C38 70%); */
+
   margin: auto;
 }
 
@@ -1894,11 +1896,12 @@ label {
 }
 /* Toggle */
 .app  {
- background: rgba(255, 255, 255, 0.44) !important;
-  /* border-radius: 16px; */
+ /* background: rgba(255, 255, 255, 0.44) !important;
+  border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
   backdrop-filter: blur(8.1px) !important;
-  -webkit-backdrop-filter: blur(8.1px) !important;
+  -webkit-backdrop-filter: blur(8.1px) !important; */
+background-color: #fff;
   position: fixed;
   bottom: 0px;
   
@@ -1948,14 +1951,14 @@ label {
 }
 
 [type="checkbox"]:checked + .app .circle {
-  /* background: linear-gradient(40deg, #8983F7, #A3DAFB 50%); */
-  background: linear-gradient(40deg, white, white 50%);
+  background: linear-gradient(40deg, #8983F7, #A3DAFB 50%);
+  /* background: linear-gradient(40deg, white, white 50%); */
 
 }
 
 [type="checkbox"]:checked + .app .main-circle {
-  /* background: linear-gradient(40deg, #8983F7, #A3DAFB 50%); */
-  background: linear-gradient(40deg, white, white 50%);
+  background: linear-gradient(40deg, #8983F7, #A3DAFB 50%);
+  /* background: linear-gradient(40deg, white, white 50%); */
 
 }
 
