@@ -270,6 +270,7 @@ textarea {
 }
 
 .home-hero {
+  padding-top: 13vh;
 }
 @media only screen and (max-width: 37.5em) {
   /* .home-hero {
