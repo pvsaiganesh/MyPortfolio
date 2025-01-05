@@ -235,8 +235,8 @@ textarea {
 
 .btn--theme {
   background: #000;
-  color: #fff 
-  text-decoration: none 
+  color: #fff;
+  text-decoration: none;
 }
 .btn--theme-inv {
   color: #000;
@@ -825,7 +825,7 @@ textarea {
   font-size: 1.6rem;
   color: #333;
   text-align: right;
-  width: 7rem;
+  width: 5rem;
 
   font-weight: 700;
   text-transform: uppercase;
@@ -940,7 +940,7 @@ textarea {
   font-weight: 600;
   color: #777;
 }
-.dark-mode .skills__skill{
+.dark-mode .skills__skill {
   background: var(--background-color-light);
   color: var(--text-color-light);
 }
@@ -1585,7 +1585,7 @@ header p {
 .menu-icon:hover {
   transform: scale(1.1);
 }
-.dark-mode .menu-icon{
+.dark-mode .menu-icon {
   fill: inherit;
 }
 .pad-md {
@@ -1713,13 +1713,13 @@ header p {
   width: 40rem;
   height: 40rem;
   border-radius: 100%;
-  background: linear-gradient(40deg, #FF0080,#FF8C00 70%);
+  background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
   position: absolute;
   z-index: 1;
   left: 50%;
   -webkit-transform: translate(-50%, -70%);
   -ms-transform: translate(-50%, -70%);
-  transform: translate(-50%, -70%)
+  transform: translate(-50%, -70%);
 }
 
 /* Phone */
@@ -1741,14 +1741,12 @@ header p {
   flex-direction: column;
 }
 
-
-
 /* Top */
 .menu {
-/*   background-color: blue; */
+  /*   background-color: blue; */
   font-size: 80%;
-  opacity: .4;
-  padding: .8rem 1.8rem;
+  opacity: 0.4;
+  padding: 0.8rem 1.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1764,12 +1762,12 @@ header p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .battery {
-  width: .85rem;
-  height: .45rem;
+  width: 0.85rem;
+  height: 0.45rem;
   background-color: black;
 }
 
@@ -1782,7 +1780,7 @@ header p {
   -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
-  margin: .12rem .5rem;
+  margin: 0.12rem 0.5rem;
 }
 
 /* Middle */
@@ -1807,7 +1805,7 @@ header p {
   border-radius: 100%;
   width: 6rem;
   height: 6rem;
-  background: linear-gradient(40deg, #FF0080,#FF8C00 70%);
+  background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
   /* background: linear-gradient(40deg, #F28C38,#F28C38 70%); */
 
   margin: auto;
@@ -1826,23 +1824,26 @@ header p {
   -webkit-transform-origin: top right;
   -ms-transform-origin: top right;
   transform-origin: top right;
-  -webkit-transition: -webkit-transform .6s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: -webkit-transform .6s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: transform .6s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: transform .6s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform .6s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition: -webkit-transform 0.6s
+    cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: -webkit-transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1),
+    -webkit-transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-label, .toggle {
+label,
+.toggle {
   height: 2.8rem;
   border-radius: 100px;
 }
 
 label {
   width: 100%;
-  background-color: rgba(0,0,0,.1);
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 100px;
   position: relative;
-  margin: .8rem 0 0rem 0;
+  margin: 0.8rem 0 0rem 0;
   cursor: pointer;
 }
 
@@ -1850,12 +1851,14 @@ label {
   position: absolute;
   width: 50%;
   background-color: #fff;
-  -webkit-box-shadow: 0 2px 15px rgba(0,0,0,.15);
-  box-shadow: 0 2px 15px rgba(0,0,0,.15);
-  -webkit-transition: -webkit-transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: -webkit-transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  -webkit-transition: -webkit-transform 0.3s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: -webkit-transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    -webkit-transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .names {
@@ -1879,7 +1882,7 @@ label {
 }
 
 .dark {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .mark {
@@ -1895,16 +1898,16 @@ label {
   display: none;
 }
 /* Toggle */
-.app  {
- /* background: rgba(255, 255, 255, 0.44) !important;
+.app {
+  /* background: rgba(255, 255, 255, 0.44) !important;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
   backdrop-filter: blur(8.1px) !important;
   -webkit-backdrop-filter: blur(8.1px) !important; */
-background-color: #fff;
+  background-color: #fff;
   position: fixed;
   bottom: 0px;
-  
+
   right: 0px;
   border-top-left-radius: 10px !important;
   border-bottom-left-radius: 0px !important;
@@ -1914,7 +1917,7 @@ background-color: #fff;
   z-index: 9999999;
 }
 .dark-mode .app {
-   background: var(--background-color-light);
+  background: var(--background-color-light);
   /* border-radius: 16px; */
 }
 [type="checkbox"]:checked + .app .toggle {
@@ -1951,15 +1954,13 @@ background-color: #fff;
 }
 
 [type="checkbox"]:checked + .app .circle {
-  background: linear-gradient(40deg, #8983F7, #A3DAFB 50%);
+  background: linear-gradient(40deg, #8983f7, #a3dafb 50%);
   /* background: linear-gradient(40deg, white, white 50%); */
-
 }
 
 [type="checkbox"]:checked + .app .main-circle {
-  background: linear-gradient(40deg, #8983F7, #A3DAFB 50%);
+  background: linear-gradient(40deg, #8983f7, #a3dafb 50%);
   /* background: linear-gradient(40deg, white, white 50%); */
-
 }
 
 [type="checkbox"]:checked + .time {
@@ -1981,17 +1982,17 @@ background-color: #fff;
 [type="checkbox"]:checked + .app .body {
   /* border-radius: 40px; */
   /* ; */
-   border-top-left-radius: 10px !important;
+  border-top-left-radius: 10px !important;
   border-bottom-left-radius: 0px !important;
   border-top-right-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
 }
 
 .menu {
-/*   background-color: blue; */
+  /*   background-color: blue; */
   font-size: 80%;
-  opacity: .4;
-  padding: .8rem .8rem;
+  opacity: 0.4;
+  padding: 0.8rem 0.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
