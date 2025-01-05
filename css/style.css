@@ -1680,7 +1680,7 @@ header p {
 }
 .social {
   width: 10rem;
-  border-top-right-radius: 20px;
+  border-top-right-radius: 10px;
   /* From https://css.glass */
   /* From https://css.glass */
   /* background: rgba(255, 255, 255, 0.47); */
@@ -1726,8 +1726,8 @@ header p {
 .phone {
   position: relative;
   z-index: 2;
-  width: 13rem;
-  height: 12rem;
+  width: 14rem;
+  height: 13rem;
   background-color: inherit;
   /* -webkit-box-shadow: 0 4px 35px rgba(0,0,0,.1); */
   /* box-shadow: 0 4px 35px rgba(0,0,0,.1); */
@@ -1842,7 +1842,7 @@ label {
   background-color: rgba(0,0,0,.1);
   border-radius: 100px;
   position: relative;
-  margin: 1.8rem 0 4rem 0;
+  margin: .8rem 0 0rem 0;
   cursor: pointer;
 }
 
@@ -1906,7 +1906,7 @@ background-color: #fff;
   bottom: 0px;
   
   right: 0px;
-  border-top-left-radius: 40px !important;
+  border-top-left-radius: 10px !important;
   border-bottom-left-radius: 0px !important;
   border-top-right-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
@@ -1981,7 +1981,7 @@ background-color: #fff;
 [type="checkbox"]:checked + .app .body {
   /* border-radius: 40px; */
   /* ; */
-   border-top-left-radius: 40px !important;
+   border-top-left-radius: 10px !important;
   border-bottom-left-radius: 0px !important;
   border-top-right-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
