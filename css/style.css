@@ -163,6 +163,9 @@ textarea {
   margin: auto;
   line-height: 1.6;
 }
+.dark-mode .heading-sec__sub {
+  color: #eee;
+}
 @media only screen and (max-width: 37.5em) {
   .heading-sec__sub {
     font-size: 1.8rem;
