@@ -667,9 +667,9 @@ textarea {
   height: 13vh;
   width: 100%;
   z-index: 1000;
-  /* background: #fff; */
+  background: #fff;
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.44);
+  /* background: rgba(255, 255, 255, 0.44); */
   /* border-radius: 16px; */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.1px);
@@ -1585,6 +1585,9 @@ header p {
 .menu-icon:hover {
   transform: scale(1.1);
 }
+.dark-mode .menu-icon{
+  fill: inherit;
+}
 .pad-md {
   padding: 2rem;
   width: 100%;
@@ -1680,11 +1683,12 @@ header p {
   border-top-right-radius: 20px;
   /* From https://css.glass */
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.47);
+  /* background: rgba(255, 255, 255, 0.47); */
   /* border-radius: 16px; */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: white;
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9.5px);
-  -webkit-backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px); */
 }
 /* @media (prefers-color-scheme: dark) {
   body {
