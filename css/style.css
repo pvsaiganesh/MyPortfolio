@@ -767,7 +767,7 @@ textarea {
   display: none;
   width: 3rem;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 47.5em) {
   .header__main-ham-menu-cont {
     display: inline;
     cursor: pointer;
@@ -2026,9 +2026,9 @@ label {
   --transition: .5s cubic-bezier(0, -0.02, 0.4, 1.25);
   --circle-transition: .3s cubic-bezier(0, -0.02, 0.35, 1.17);
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .theme-switch {
-    --toggle-size: 10px;
+    --toggle-size: 15px;
   }
   
 }
