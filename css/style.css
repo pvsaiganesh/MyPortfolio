@@ -2028,7 +2028,7 @@ label {
 }
 @media screen and (max-width: 800px) {
   .theme-switch {
-    --toggle-size: 15px;
+    --toggle-size: 13px;
   }
   
 }
