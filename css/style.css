@@ -1409,13 +1409,14 @@ header p {
 }
 
 .time {
-  background: #000;
+  background: var(--background-color-dark);
+  color: var(--text-color-dark);
   display: inline-block;
   padding: 8px;
 }
 .dark-mode .time {
-  background: var(--background-color-dark);
-  color: white;
+  background: var(--background-color-light);
+  color: var(--text-color-light);
 }
 
 .desc {
@@ -1892,9 +1893,12 @@ label {
   background-color: black;
 }
 
-.time {
-  color: black;
+/* .time {
+  color: white;
 }
+.dark-mode .time{
+  color: white;
+} */
 /* -------- Switch Styles ------------*/
 [type="checkbox"] {
   display: none;
