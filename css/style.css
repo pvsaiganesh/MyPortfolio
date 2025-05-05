@@ -2450,4 +2450,6 @@ ul {
 .card:hover {
   transform: scale(1.04) rotate(-1deg);
 }
-
+.pad-top{
+  padding-top: 5rem;
+}
