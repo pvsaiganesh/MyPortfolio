@@ -289,9 +289,37 @@
       </div>
       </div>
       <div class="col-12  col-md-6 col-lg-6 text-left align-self-center">
-         <h2 class="heading heading-sec heading-sec__mb-med">
-        <span class="heading-sec__main text-capitalize">I'm Sai <span class="d-none d-md-inline">Ganesh</span></span>
-        <span class="heading-sec__main text-capitalize mb-5">A Freelancer</span>
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main text-capitalize animate-fade-in">
+            I'm Sai <span class="d-none d-md-inline">Ganesh</span>
+          </span>
+          <span class="heading-sec__main text-capitalize mb-5 animate-fade-in">
+            A Freelancer
+          </span>
+        </h2>
+        <style>
+          .animate-fade-in {
+            opacity: 0;
+            animation: fadeIn 1s ease-in forwards;
+          }
+          .animate-slide-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideIn 1s 0.7s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+            display: inline-block;
+          }
+          @keyframes fadeIn {
+            to {
+              opacity: 1;
+            }
+          }
+          @keyframes slideIn {
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+        </style>
         <span class="mt-5 pt-5" > 
 <ul class="example-2 pad-top mt-5">
   <li class="icon-content">
@@ -604,117 +632,131 @@
         <div class="about__content">
           <div class="about__content-main">
             <div class="about__content-details">
-              <!-- </div> -->
               <div class="about__content-skills">
                 <h3 class="about__content-title button-placement">My Skills</h3>
-                <div class="skills">
-               
-
-                   <div class="skills__skill">
-
-                    <img
-                      class="skill-icon"
-                      src="./assets/svg/mongodb.svg"
-                    />
-                   </div>
-                    
-                  <div class="skills__skill">
-                    <img
-                      class="skill-icon"
-                      src="./assets/svg/expressjs.svg"
-                    />
+                <div class="skills skills-enhanced">
+                  <div class="skills__skill skill-card">
+                    <img class="skill-icon" src="./assets/svg/mongodb.svg" alt="MongoDB" />
+                    <span class="skill-label">MongoDB</span>
                   </div>
-                  <div class="skills__skill">
-                    <img
-                      class="skill-icon"
-                      src="./assets/svg/react-native.svg"
-                    />
+                  <div class="skills__skill skill-card">
+                    <img class="skill-icon" src="./assets/svg/expressjs.svg" alt="Express.js" />
+                    <span class="skill-label">Express.js</span>
                   </div>
-                    
-                  <div class="skills__skill">
-                    <img class="skill-icon" src="./assets/svg/react.svg" />
+                  <div class="skills__skill skill-card">
+                    <img class="skill-icon" src="./assets/svg/react-native.svg" alt="React Native" />
+                    <span class="skill-label">React Native</span>
                   </div>
-                    
-                   <div class="skills__skill">
-                    <img
-                      class="skill-icon"
-                      src="./assets/svg/nodejs.svg"
-                    />
+                  <div class="skills__skill skill-card">
+                    <img class="skill-icon" src="./assets/svg/react.svg" alt="React.js" />
+                    <span class="skill-label">React.js</span>
                   </div>
-                  
-                  <div class="skills__skill">
-                    <img class="skill-icon" src="./assets/svg/html-1.svg" />
+                  <div class="skills__skill skill-card">
+                    <img class="skill-icon" src="./assets/svg/nodejs.svg" alt="Node.js" />
+                    <span class="skill-label">Node.js</span>
                   </div>
-                  <div class="skills__skill">
-                    <img class="skill-icon" src="./assets/svg/css-3.svg" />
+                  <div class="skills__skill skill-card">
+                    <img class="skill-icon" src="./assets/svg/html-1.svg" alt="HTML5" />
+                    <span class="skill-label">HTML5</span>
                   </div>
-                  <!-- <div class="skills__skill">
-                    <img
-                      class="skill-icon"
-                      src="./assets/svg/javascript-1.svg"
-                    />
-                  </div> -->
-                  <div class="skills__skill">
-                    <img
-                      class="skill-icon"
-                      src="./assets/svg/logo-javascript.svg"
-                    />
+                  <div class="skills__skill skill-card">
+                    <img class="skill-icon" src="./assets/svg/css-3.svg" alt="CSS3" />
+                    <span class="skill-label">CSS3</span>
                   </div>
-                  <div class="skills__skill">
-                    <img class="skill-icon" src="./assets/svg/sass-1.svg" />
+                  <div class="skills__skill skill-card">
+                    <img class="skill-icon" src="./assets/svg/logo-javascript.svg" alt="JavaScript" />
+                    <span class="skill-label">JavaScript</span>
                   </div>
-                  <div class="skills__skill">
-                    <img class="skill-icon" src="./assets/svg/git-icon.svg" />
+                  <div class="skills__skill skill-card">
+                    <img class="skill-icon" src="./assets/svg/sass-1.svg" alt="Sass" />
+                    <span class="skill-label">Sass</span>
                   </div>
-                  <div class="skills__skill">
-                    <img class="skill-icon" src="./assets/svg/redux.svg" />
+                  <div class="skills__skill skill-card">
+                    <img class="skill-icon" src="./assets/svg/git-icon.svg" alt="Git" />
+                    <span class="skill-label">Git</span>
                   </div>
-                  <div class="skills__skill">
-                    <img class="skill-icon" src="./assets/svg/python-5.svg" />
+                  <div class="skills__skill skill-card">
+                    <img class="skill-icon" src="./assets/svg/redux.svg" alt="Redux" />
+                    <span class="skill-label">Redux</span>
                   </div>
-                  <!-- <div class="skills__skill">
-                    <img class="skill-icon" src="./assets/svg/sqlite.svg" />
-                  </div> -->
-                  <!-- <div class="skills__skill">
-                    <img class="skill-icon" src="./assets/svg/java-4.svg" />
-                  </div> -->
-                  <!-- <div class="skills__skill">
-                    <img
-                      class="skill-icon"
-                      src="./assets/svg/react-native-1.svg"
-                    />
-                  </div> -->
-                  <!-- <div class="skills__skill">
-                    <img
-                      class="skill-icon"
-                      src="./assets/svg/microsoft-windows-22.svg"
-                    />
-                  </div> -->
-                  <div class="skills__skill">
-                    <img
-                      class="skill-icon"
-                      src="./assets/svg/visual-studio-code-1.svg"
-                    />
+                  <div class="skills__skill skill-card">
+                    <img class="skill-icon" src="./assets/svg/python-5.svg" alt="Python" />
+                    <span class="skill-label">Python</span>
                   </div>
-                  <!-- <div class="skills__skill"><img class="skill-icon" src="./assets/svg/netlify.svg"/></div> -->
-                  <div class="skills__skill">
-                    <img
-                      class="skill-icon"
-                      src="./assets/svg/google-g-2015.svg"
-                    />
+                  <div class="skills__skill skill-card">
+                    <img class="skill-icon" src="./assets/svg/visual-studio-code-1.svg" alt="VS Code" />
+                    <span class="skill-label">VS Code</span>
                   </div>
-                   
-                  <!-- <div class="skills__skill">
-                    <img
-                      class="skill-icon"
-                      src="./assets/svg/android-logomark.svg"
-                    />
-                  </div> -->
+                  <div class="skills__skill skill-card">
+                    <img class="skill-icon" src="./assets/svg/google-g-2015.svg" alt="Google" />
+                    <span class="skill-label">Google</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <style>
+        .skills-enhanced {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1.2rem;
+          justify-content: flex-start;
+          margin-top: 1.5rem;
+        }
+        .skill-card {
+          background: #fff;
+          border-radius: 14px;
+          box-shadow: 0 2px 12px rgba(60,60,60,0.07), 0 1.5px 4px rgba(60,60,60,0.04);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 1.1rem 1.3rem 0.7rem 1.3rem;
+          min-width: 110px;
+          max-width: 120px;
+          transition: transform 0.15s, box-shadow 0.15s;
+          border: 1px solid #f2f2f2;
+        }
+        .skill-card:hover {
+          transform: translateY(-4px) scale(1.04);
+          box-shadow: 0 6px 24px rgba(60,60,60,0.13), 0 2px 8px rgba(60,60,60,0.08);
+          border-color: #e0e0e0;
+        }
+        .skill-icon {
+          width: 44px;
+          height: 44px;
+          margin-bottom: 0.7rem;
+          object-fit: contain;
+          filter: drop-shadow(0 1px 2px rgba(0,0,0,0.04));
+        }
+        .skill-label {
+          font-size: 1rem;
+          color: #222;
+          font-weight: 500;
+          letter-spacing: 0.01em;
+          margin-bottom: 0.2rem;
+          text-align: center;
+          word-break: break-word;
+        }
+        @media (max-width: 600px) {
+          .skills-enhanced {
+            gap: 0.7rem;
+            justify-content: center;
+          }
+          .skill-card {
+            min-width: 90px;
+            max-width: 100px;
+            padding: 0.8rem 0.7rem 0.5rem 0.7rem;
+          }
+          .skill-icon {
+            width: 34px;
+            height: 34px;
+          }
+          .skill-label {
+            font-size: 0.92rem;
+          }
+        }
+        </style>
         <br />
         <br />
         <br />
