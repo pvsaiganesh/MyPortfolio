@@ -794,9 +794,36 @@ textarea {
 }
 
 @media only screen and (max-width: 56.25em) {
-  /* .header__content {
-    justify-content: space-bet;
-  } */
+  .header__content {
+    padding: 0.8rem 1.2rem;
+    gap: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header__content {
+    padding: 0.6rem 1rem;
+    gap: 0.5rem;
+  }
+
+  .header__content .main-footer__icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .header__content > a.p-1 {
+    padding: 0.5rem !important;
+    padding-left: 1rem !important;
+  }
+
+  .header__content > .d-md-none {
+    flex-shrink: 0;
+  }
+
+  .header__content > .d-md-none .theme-switch__container {
+    transform: scale(0.7);
+    transform-origin: right center;
+  }
 }
 
 .header__logo-container {
@@ -853,7 +880,7 @@ textarea {
   .header {
     background: rgba(255, 255, 255, 0.95);
     border: 1px solid rgba(26, 115, 232, 0.1);
-    height: auto;
+    height: 60px;
   }
 }
 
