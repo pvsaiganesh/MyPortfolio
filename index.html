@@ -24,6 +24,58 @@
 </head>
 
 <body>
+  <svg class="icon-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-home" viewBox="0 0 24 24">
+      <path d="M3 10.8 12 3l9 7.8" />
+      <path d="M5.5 9.6V21h13V9.6" />
+      <path d="M9.5 21v-6h5v6" />
+    </symbol>
+    <symbol id="icon-about" viewBox="0 0 24 24">
+      <circle cx="12" cy="8" r="3.5" />
+      <path d="M5 20c1.2-4 3.6-6 7-6s5.8 2 7 6" />
+    </symbol>
+    <symbol id="icon-projects" viewBox="0 0 24 24">
+      <path d="M4 5h16v14H4z" />
+      <path d="M4 9h16" />
+      <path d="m9 14-2 2 2 2" />
+      <path d="m15 14 2 2-2 2" />
+    </symbol>
+    <symbol id="icon-work" viewBox="0 0 24 24">
+      <path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7" />
+      <path d="M4 7h16v12H4z" />
+      <path d="M4 12h16" />
+      <path d="M10 12v2h4v-2" />
+    </symbol>
+    <symbol id="icon-certificate" viewBox="0 0 24 24">
+      <path d="M6 4h12v10H6z" />
+      <path d="M8 8h8" />
+      <path d="M8 11h5" />
+      <path d="m10 14-2 6 4-2 4 2-2-6" />
+    </symbol>
+    <symbol id="icon-contact" viewBox="0 0 24 24">
+      <path d="M4 6h16v12H4z" />
+      <path d="m4 7 8 6 8-6" />
+    </symbol>
+    <symbol id="icon-chat" viewBox="0 0 24 24">
+      <path d="M5 18.5 3.8 22l3.8-1.2A9 9 0 1 0 5 18.5Z" />
+      <path d="M8.5 9.5c.8 2.5 2.6 4.3 5.1 5.1l1.7-1.7" />
+      <path d="m8.5 9.5 1.7-1.7" />
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24">
+      <path d="M4 6h16v12H4z" />
+      <path d="m4 7 8 6 8-6" />
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+      <path d="M7 4h3l1.4 4-2 1.3a10.5 10.5 0 0 0 5.3 5.3l1.3-2 4 1.4v3a2 2 0 0 1-2.2 2A15.5 15.5 0 0 1 5 6.2 2 2 0 0 1 7 4Z" />
+    </symbol>
+    <symbol id="icon-resume" viewBox="0 0 24 24">
+      <path d="M7 3h7l4 4v14H7z" />
+      <path d="M14 3v5h4" />
+      <path d="M9.5 12h5" />
+      <path d="M9.5 15h5" />
+      <path d="M9.5 18h3" />
+    </symbol>
+  </svg>
   <header class="header">
     <div class="header__content pt-1 pt-md-0 pt-lg-0">
       <label class="burger d-md-none" for="burger">
@@ -61,8 +113,10 @@
         <span class="header__logo-sub fw-bolder"><span class="d-none d-md-inline">P V </span>SAI
           <span class="d-none d-md-inline">GANESH</span></span>
       </div>
-      <a class="p-1 pl-2 pl-md-5" target="_blank" rel="noreferrer" href="https://wa.me/917780531969?text=Hi">
-        <img class="main-footer__icon menu-icon" src="./assets/png/whatsapp.png" alt="icon" />
+      <a class="header-contact-link" target="_blank" rel="noreferrer" href="https://wa.me/917780531969?text=Hi"
+        aria-label="Chat on WhatsApp">
+        <svg class="site-icon" aria-hidden="true"><use href="#icon-chat"></use></svg>
+        <span class="header-contact-text">Chat</span>
       </a>
       <div class="d-md-none d-block">
         <button class="btn d-md-none d-inline">
@@ -93,33 +147,39 @@
       <div class="header__main d-none d-md-block">
         <ul class="header__links">
           <li class="header__link-wrapper">
-            <a href="./index.html" class="header__link menu-icon"><img class="menu-icon" height="40px" width="40px"
-                src="./assets/png/home.png" />
+            <a href="./index.html" class="header__link">
+              <svg class="site-icon" aria-hidden="true"><use href="#icon-home"></use></svg>
+              <span class="nav-label">Home</span>
             </a>
           </li>
           <li class="header__link-wrapper">
-            <a href="./index.html#about" class="header__link menu-icon"><img class="menu-icon" height="40px"
-                width="40px" src="./assets/png/information.png" />
+            <a href="./index.html#about" class="header__link">
+              <svg class="site-icon" aria-hidden="true"><use href="#icon-about"></use></svg>
+              <span class="nav-label">About</span>
             </a>
           </li>
           <li class="header__link-wrapper">
-            <a href="./index.html#projects" class="header__link menu-icon">
-              <img height="40px" width="40px" class="menu-icon" src="./assets/png/project.png" />
+            <a href="./index.html#projects" class="header__link">
+              <svg class="site-icon" aria-hidden="true"><use href="#icon-projects"></use></svg>
+              <span class="nav-label">Projects</span>
             </a>
           </li>
           <li class="header__link-wrapper">
-            <a href="./index.html#work" class="header__link menu-icon">
-              <img height="40px" width="40px" class="menu-icon" src="./assets/png/briefcase.png" />
+            <a href="./index.html#work" class="header__link">
+              <svg class="site-icon" aria-hidden="true"><use href="#icon-work"></use></svg>
+              <span class="nav-label">Work</span>
             </a>
           </li>
           <li class="header__link-wrapper">
-            <a href="./index.html#certificate" class="header__link menu-icon">
-              <img height="40px" width="40px" class="menu-icon" src="./assets/png/certificate-icon.png" />
+            <a href="./index.html#certificate" class="header__link">
+              <svg class="site-icon" aria-hidden="true"><use href="#icon-certificate"></use></svg>
+              <span class="nav-label">Certificates</span>
             </a>
           </li>
           <li class="header__link-wrapper">
-            <a href="./index.html#contact" class="header__link menu-icon"><img height="40px" width="40px"
-                class="menu-icon" src="./assets/png/contact-us.png" />
+            <a href="./index.html#contact" class="header__link">
+              <svg class="site-icon" aria-hidden="true"><use href="#icon-contact"></use></svg>
+              <span class="nav-label">Contact</span>
             </a>
           </li>
           <li>
@@ -156,35 +216,42 @@
     <span class="header__sm-menu mt-5 pt-5">
       <div class="header__sm-menu-content">
         <ul class="header__sm-menu-links">
-          <li class="header__sm-menu-link menu-icon">
-            <a href="./index.html#home"><img class="menu-icon" height="30px" width="30px" src="./assets/png/home.png" />
+          <li class="header__sm-menu-link">
+            <a href="./index.html#home">
+              <svg class="site-icon" aria-hidden="true"><use href="#icon-home"></use></svg>
+              <span>Home</span>
             </a>
           </li>
 
-          <li class="header__sm-menu-link menu-icon">
-            <a href="./index.html#about"><img class="menu-icon" height="30px" width="30px"
-                src="./assets/png/information.png" />
+          <li class="header__sm-menu-link">
+            <a href="./index.html#about">
+              <svg class="site-icon" aria-hidden="true"><use href="#icon-about"></use></svg>
+              <span>About</span>
             </a>
           </li>
 
-          <li class="header__sm-menu-link menu-icon">
-            <a href="./index.html#projects"><img class="menu-icon" height="30px" width="30px"
-                src="./assets/png/project.png" />
+          <li class="header__sm-menu-link">
+            <a href="./index.html#projects">
+              <svg class="site-icon" aria-hidden="true"><use href="#icon-projects"></use></svg>
+              <span>Projects</span>
             </a>
           </li>
-          <li class="header__sm-menu-link menu-icon">
-            <a href="./index.html#work"><img class="menu-icon" height="30px" width="30px"
-                src="./assets/png/briefcase.png" />
+          <li class="header__sm-menu-link">
+            <a href="./index.html#work">
+              <svg class="site-icon" aria-hidden="true"><use href="#icon-work"></use></svg>
+              <span>Work</span>
             </a>
           </li>
-          <li class="header__sm-menu-link menu-icon">
-            <a href="./index.html#certificate"><img class="menu-icon" height="30px" width="30px"
-                src="./assets/png/certificate-icon.png" />
+          <li class="header__sm-menu-link">
+            <a href="./index.html#certificate">
+              <svg class="site-icon" aria-hidden="true"><use href="#icon-certificate"></use></svg>
+              <span>Certificates</span>
             </a>
           </li>
-          <li class="header__sm-menu-link menu-icon">
-            <a href="./index.html#contact"><img class="menu-icon" height="30px" width="30px"
-                src="./assets/png/contact-us.png" />
+          <li class="header__sm-menu-link">
+            <a href="./index.html#contact">
+              <svg class="site-icon" aria-hidden="true"><use href="#icon-contact"></use></svg>
+              <span>Contact</span>
             </a>
           </li>
         </ul>
@@ -1100,18 +1167,24 @@ Implemented functionalities to view national and state-level data.
         </h2>
         <div class="d-flex flex-row justify-content-center align-middle">
           <div class="col-4 p-3">
-            <a href="mailto:ipvsaiganesh@gmail.com" class="btn btn-light rounded-circle p-4"><img height="40px"
-                width="40px" src="./assets/png/email.png" /></a>
+            <a href="mailto:ipvsaiganesh@gmail.com" class="btn btn-light contact-action">
+              <svg class="site-icon" aria-hidden="true"><use href="#icon-mail"></use></svg>
+              <span>Email</span>
+            </a>
           </div>
           <div class="col-4 p-3">
-            <a class="btn btn-light rounded-circle p-4" href="tel:+917780531969"><img height="40px" width="40px"
-                src="./assets/png/telephone-call.png" /></a>
+            <a class="btn btn-light contact-action" href="tel:+917780531969">
+              <svg class="site-icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
+              <span>Call</span>
+            </a>
           </div>
 
           <div class="col-4 p-3">
             <a href="https://drive.google.com/file/d/1aJSOVei_0sni8RtRB6QQUY3DxYaazV9f/view?usp=sharing" alt="resume"
-              class="btn btn-light rounded-circle p-4" download="P V Sai Ganesh" target="_blank"><img height="40px"
-                width="40px" src="./assets/png/curriculum-vitae.png" /></a>
+              class="btn btn-light contact-action" download="P V Sai Ganesh" target="_blank">
+              <svg class="site-icon" aria-hidden="true"><use href="#icon-resume"></use></svg>
+              <span>Resume</span>
+            </a>
           </div>
         </div>
       </div>
