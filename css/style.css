@@ -4389,10 +4389,21 @@ body.dark-mode {
   line-height: 1;
 }
 
+.header-contact-link .site-icon {
+  width: 2.35rem;
+  height: 2.35rem;
+  color: #25d366;
+  stroke-width: 1.7;
+}
+
 .header-contact-link:hover {
   color: var(--text-inverse);
   background: var(--brand-gradient);
   transform: translateY(-0.2rem);
+}
+
+.header-contact-link:hover .site-icon {
+  color: var(--text-inverse);
 }
 
 .header__links {
@@ -4672,4 +4683,72 @@ body.dark-mode {
 
 .main-footer {
   border-top-color: var(--brand-primary);
+}
+
+/* Mobile skills grid and footer spacing fixes */
+#home.home-hero {
+  padding-bottom: 0 !important;
+}
+
+.skills-enhanced {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)) !important;
+  align-items: stretch;
+}
+
+.skills-enhanced .skill-card,
+.skills-enhanced .skills__skill {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: none !important;
+}
+
+.main-footer {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.main-footer__upper {
+  min-height: 0;
+  padding: 2.4rem 0 !important;
+}
+
+.main-footer__row-2 {
+  width: auto;
+}
+
+body {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .skills-enhanced {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 0.9rem !important;
+  }
+
+  .skills-enhanced .skill-card,
+  .skills-enhanced .skills__skill {
+    min-height: 10.4rem;
+    padding: 1rem 0.7rem !important;
+  }
+
+  .skills-enhanced .skill-icon {
+    width: 4.2rem !important;
+    height: 4.2rem !important;
+  }
+
+  .skills-enhanced .skill-label {
+    font-size: 1.15rem !important;
+  }
+
+  .main-footer__upper {
+    padding: 1.8rem 0 !important;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .skills-enhanced {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
 }
