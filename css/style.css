@@ -4754,6 +4754,20 @@ body {
 }
 
 /* Responsive project media sizing */
+.screenshots-jobs-portal {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+.screenshots-jobs-portal .projects__row-img-2 {
+  width: 100% !important;
+  aspect-ratio: 9 / 19;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 .projects .project,
 .projects__content .project {
   display: flex;
@@ -4809,6 +4823,11 @@ body {
 }
 
 @media only screen and (max-width: 56.25em) {
+  .screenshots-jobs-portal {
+    grid-template-columns: repeat(2, minmax(0, 12rem)) !important;
+    justify-content: center;
+  }
+
   .projects__content .row > .project,
   .projects__content .row > .button-placement {
     flex: 0 0 100%;
@@ -4826,8 +4845,20 @@ body {
 }
 
 @media only screen and (max-width: 37.5em) {
+  .screenshots-jobs-portal {
+    grid-template-columns: repeat(2, minmax(0, 10rem)) !important;
+    gap: 0.7rem;
+  }
+
   .project-video,
   .projects__row-img-cont video {
     aspect-ratio: 4 / 3;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .screenshots-jobs-portal {
+    grid-template-columns: repeat(2, minmax(0, 8.6rem)) !important;
+    gap: 0.6rem;
   }
 }
