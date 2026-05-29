@@ -1,11 +1,6 @@
 .home-hero {
-  color: #fff;
-  background: linear-gradient(
-      to right,
-      rgba($themeClrPrimary, 0.8),
-      rgba($themeClrPrimary, 0.8)
-    ),
-    url(../../assets/svg/common-bg.svg);
+  color: $text-primary;
+  background: $bg-darker;
   background-position: center;
 
   height: 100vh;
@@ -22,8 +17,8 @@
   &__socials {
     position: absolute;
     top: 50%;
-    border: 2px solid #eee;
-    border-left: 2px solid #eee;
+    border: 2px solid $bg-light;
+    border-left: 2px solid $bg-light;
     transform: translateY(-50%);
     @include respond(tab-port) {
       display: none;
@@ -48,11 +43,11 @@
     width: 100%;
     display: block;
     padding: 1.2rem;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid $bg-light;
     transition: background .3s;
 
     &:hover {
-      background: rgba(#fff,.1);
+      background: rgba(#ffffff,.1);
     }
 
     &--bd-none {
@@ -91,7 +86,7 @@
 }
 
 .about {
-  background: rgb(250, 250, 250);
+  background: $bg-dark;
   &__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -110,7 +105,7 @@
     }
     &-details-para {
       font-size: 1.8rem;
-      color: grey;
+      color: $text-secondary;
       max-width: 60rem;
       line-height: 1.7;
       margin-bottom: 1rem;
@@ -175,7 +170,7 @@
       }
       &-desc {
         font-size: 1.8rem;
-        color: grey;
+        color: $text-secondary;
         max-width: 60rem;
         line-height: 1.7;
         margin-bottom: 3rem;
@@ -188,18 +183,13 @@
 }
 
 .contact {
-  background: linear-gradient(
-      to right,
-      rgba($themeClrPrimary, 0.8),
-      rgba($themeClrPrimary, 0.8)
-    ),
-    url(../../assets/svg/common-bg.svg);
+  background: $bg-darker;
   background-size: cover;
   background-position: center;
 
   &__form-container {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background: rgba(#fff, 2);
+    background: $bg-light;
     padding: 4rem;
     margin-top: 6rem;
     max-width: 80rem;
@@ -219,7 +209,7 @@
     }
   }
   &__form-label {
-    color: #666;
+    color: $text-primary;
     font-size: 1.4rem;
     letter-spacing: 1px;
     font-weight: 700;
@@ -228,39 +218,39 @@
     text-align: left;
   }
   &__form-input {
-    color: #333;
+    color: $text-primary;
     padding: 2rem;
     width: 100%;
-    border: 1px solid rgb(235, 235, 235);
+    border: 1px solid $bg-darker;
     font-size: 1.6rem;
     letter-spacing: 0px;
-    background: rgba(rgb(240, 240, 240), 1);
+    background: $bg-dark;
     border-radius: $commonBorderRadius;
     font-weight: 600;
     /* Code for Modern Browsers */
     &::placeholder {
-      color: #999;
+      color: $text-secondary;
       font-weight: 600;
       font-size: 1.6rem;
     }
 
     /* Code for WebKit, Blink, Edge */
     &::-webkit-input-placeholder {
-      color: #999;
+      color: $text-secondary;
       font-weight: 600;
       font-size: 1.6rem;
     }
 
     /* Code for Internet Explorer 10-11 */
     &:-ms-input-placeholder {
-      color: #999;
+      color: $text-secondary;
       font-weight: 600;
       font-size: 1.6rem;
     }
 
     /* Code for Microsoft Edge */
     &::-ms-input-placeholder {
-      color: #999;
+      color: $text-secondary;
       font-weight: 600;
       font-size: 1.6rem;
     }
@@ -268,7 +258,7 @@
     /* Code for Mozilla Firefox 4 to 18 */
     &:-moz-placeholder {
       opacity: 1;
-      color: #999;
+      color: $text-secondary;
       font-weight: 600;
       font-size: 1.6rem;
     }
@@ -276,7 +266,7 @@
     /* Code for Mozilla Firefox 19+ */
     &::-moz-placeholder {
       opacity: 1;
-      color: #999;
+      color: $text-secondary;
       font-weight: 600;
       font-size: 1.6rem;
     }

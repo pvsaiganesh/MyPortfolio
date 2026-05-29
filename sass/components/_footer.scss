@@ -1,6 +1,6 @@
 .main-footer {
-  background: #000;
-  color: #fff;
+  background: $bg-darker;
+  color: $text-primary;
   &__upper {
     display: flex;
     justify-content: space-between;
@@ -30,7 +30,7 @@
 
   &__short-desc {
     margin-top: 2rem;
-    color: #eee;
+    color: $text-secondary;
     font-size: 1.5rem;
     line-height: 1.7;
   }
@@ -49,8 +49,8 @@
 
   &__lower {
     padding: 4rem 0;
-    border-top: 1px solid #444;
-    color: #eee;
+    border-top: 1px solid $bg-light;
+    color: $text-secondary;
     font-size: 1.2rem;
     text-align: left;
     text-align: center;
