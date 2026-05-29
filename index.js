@@ -68,8 +68,7 @@ function initScrollReveal() {
       ".about__content",
       ".skill-card",
       ".timeline li",
-      ".projects__row-img-cont",
-      ".btn-custom",
+      ".portfolio-card",
       ".contact .col-4",
       ".main-footer__upper",
     ].join(",")
@@ -87,8 +86,7 @@ function initScrollReveal() {
 
     if (
       item.classList.contains("skill-card") ||
-      item.classList.contains("projects__row-img-cont") ||
-      item.classList.contains("btn-custom") ||
+      item.classList.contains("portfolio-card") ||
       item.classList.contains("col-4")
     ) {
       item.classList.add("reveal-scale");

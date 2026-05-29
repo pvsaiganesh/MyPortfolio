@@ -5766,3 +5766,516 @@ body.dark-mode .projects__content .row {
     margin-top: 2.4rem;
   }
 }
+
+/* ==========================================================================
+   COSMIC TECH PORTFOLIO REFINE: INDIGO & CYAN AESTHETIC AND SPLIT-CARDS
+   ========================================================================== */
+
+:root {
+  /* Ultra-Premium Cosmic Tech Palette */
+  --brand-primary: #4f46e5;       /* Vibrant Indigo */
+  --brand-primary-dark: #3730a3;
+  --brand-primary-soft: rgba(79, 70, 229, 0.08);
+  --brand-secondary: #0891b2;     /* Tech Cyan */
+  --brand-secondary-soft: rgba(8, 145, 178, 0.08);
+  --brand-accent: #7c3aed;        /* Violet Accent */
+  --brand-accent-soft: rgba(124, 58, 237, 0.08);
+  --brand-warm: #ec4899;          /* Cosmic Pink Glow */
+  --brand-gold: #d97706;          /* Radiant Amber */
+  --brand-ink: #0f172a;           /* Dark Slate Text */
+  --brand-muted: #475569;         /* Slate Muted Text */
+  --brand-line: rgba(79, 70, 229, 0.08);
+  --brand-gradient: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
+  --brand-gradient-hover: linear-gradient(135deg, var(--brand-accent), var(--brand-primary));
+  
+  /* Layout Surfaces & Shadows */
+  --surface-bg: #ffffff;
+  --surface-bg-strong: #f8fafc;
+  --surface-bg-muted: #f1f5f9;
+  --surface-frost: rgba(255, 255, 255, 0.85);
+  --border-theme: rgba(79, 70, 229, 0.1);
+  --page-bg: #f8fafc;
+  
+  --premium-line: rgba(79, 70, 229, 0.12);
+  --premium-shadow: 0 16px 40px rgba(79, 70, 229, 0.04), 0 8px 16px rgba(0, 0, 0, 0.02);
+  --premium-shadow-hover: 0 24px 50px rgba(79, 70, 229, 0.1), 0 12px 24px rgba(79, 70, 229, 0.06);
+  
+  --ui-radius: 16px;
+  --ui-radius-sm: 10px;
+}
+
+body.dark-mode {
+  --brand-primary: #6366f1;       /* Indigo Glow */
+  --brand-primary-dark: #4f46e5;
+  --brand-primary-soft: rgba(99, 102, 241, 0.14);
+  --brand-secondary: #06b6d4;     /* Tech Cyan Glow */
+  --brand-secondary-soft: rgba(6, 182, 212, 0.14);
+  --brand-accent: #a855f7;        /* Purple Glow */
+  --brand-accent-soft: rgba(168, 85, 247, 0.14);
+  --brand-warm: #f43f5e;          /* Neon Pink Glow */
+  --brand-gold: #fbbf24;          /* Radiant Amber Glow */
+  --brand-ink: #f8fafc;           /* Light Ice Text */
+  --brand-muted: #94a3b8;         /* Muted Slate Text */
+  --brand-line: rgba(255, 255, 255, 0.08);
+  --brand-gradient: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
+  --brand-gradient-hover: linear-gradient(135deg, var(--brand-accent), var(--brand-primary));
+  
+  --surface-bg: rgba(15, 23, 42, 0.65);
+  --surface-bg-strong: rgba(30, 41, 59, 0.45);
+  --surface-bg-muted: rgba(30, 41, 59, 0.3);
+  --surface-frost: rgba(15, 23, 42, 0.75);
+  --border-theme: rgba(255, 255, 255, 0.07);
+  --page-bg: #030712;
+  
+  --premium-line: rgba(255, 255, 255, 0.09);
+  --premium-shadow: 0 20px 48px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(99, 102, 241, 0.03);
+  --premium-shadow-hover: 0 28px 64px rgba(0, 0, 0, 0.5), 0 12px 32px rgba(99, 102, 241, 0.15);
+}
+
+/* Background grid glow overlay */
+body, body.dark-mode {
+  background:
+    radial-gradient(circle at 10% 15%, var(--brand-primary-soft) 0%, transparent 32%),
+    radial-gradient(circle at 90% 75%, var(--brand-secondary-soft) 0%, transparent 35%),
+    linear-gradient(90deg, rgba(99, 102, 241, 0.02) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(6, 182, 212, 0.015) 1px, transparent 1px),
+    var(--page-bg) !important;
+  background-size: 100% 100%, 100% 100%, 4.8rem 4.8rem, 4.8rem 4.8rem, auto;
+}
+
+/* Header tweaks */
+.header {
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid var(--border-theme) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03) !important;
+}
+
+body.dark-mode .header {
+  background: rgba(3, 7, 18, 0.75) !important;
+  border-color: rgba(255, 255, 255, 0.06) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Section styling alignment */
+.about.main-container,
+.projects > .main-container,
+#work,
+#certificate {
+  background: var(--surface-frost) !important;
+  border: 1px solid var(--border-theme) !important;
+  border-radius: 24px !important;
+  padding: 8rem 6rem !important;
+  margin-bottom: 6rem !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.about.main-container::before,
+.projects > .main-container::before,
+#work::before,
+#certificate::before {
+  height: 6px !important;
+  background: var(--brand-gradient) !important;
+  border-radius: 24px 24px 0 0;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .about.main-container,
+  .projects > .main-container,
+  #work,
+  #certificate {
+    padding: 5rem 3rem !important;
+    border-radius: 18px !important;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .about.main-container,
+  .projects > .main-container,
+  #work,
+  #certificate {
+    padding: 4rem 1.6rem !important;
+    width: calc(100% - 2rem) !important;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+}
+
+/* Timeline glow updates */
+.flag, .desc {
+  border-radius: var(--ui-radius-sm) !important;
+  border-color: var(--border-theme) !important;
+  background: var(--surface-bg) !important;
+}
+
+.timeline li .direction-r .flag-wrapper .flag::after,
+.timeline li .direction-l .flag-wrapper .flag::after {
+  background: var(--surface-bg) !important;
+  border-color: var(--border-theme) !important;
+}
+
+.time-wrapper .time {
+  background: var(--brand-primary-soft) !important;
+  color: var(--brand-primary) !important;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+/* ==========================================================================
+   STUNNING SPLIT PORTFOLIO CARD LAYOUT
+   ========================================================================== */
+
+/* Overriding Bootstrap container spacing for clean card rows */
+.projects__content.container-fluid {
+  padding: 0 !important;
+}
+
+.projects__content .row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 4rem !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* The actual high-end portfolio card */
+.portfolio-card {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: var(--surface-bg) !important;
+  border: 1px solid var(--border-theme) !important;
+  border-radius: var(--ui-radius) !important;
+  box-shadow: var(--premium-shadow) !important;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-bottom: 4rem;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--premium-shadow-hover) !important;
+  border-color: rgba(99, 102, 241, 0.24) !important;
+}
+
+.portfolio-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+body.dark-mode .portfolio-card:hover::after {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(6, 182, 212, 0.1));
+}
+
+/* Left / Top Media Section */
+.portfolio-card__showcase {
+  flex: 0 0 55%;
+  width: 55%;
+  position: relative;
+  background: var(--surface-bg-muted);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid var(--border-theme);
+}
+
+.portfolio-card__showcase video,
+.portfolio-card__showcase img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Scale up media on card hover */
+.portfolio-card:hover .portfolio-card__showcase video,
+.portfolio-card:hover .portfolio-card__showcase img {
+  transform: scale(1.03);
+}
+
+/* Framed padding for app screenshots/mobile videos */
+.portfolio-card__showcase--app-frame {
+  padding: 3rem;
+  background: radial-gradient(circle at center, var(--surface-bg-strong), var(--surface-bg-muted));
+}
+
+.portfolio-card__showcase--app-frame video,
+.portfolio-card__showcase--app-frame img {
+  object-fit: contain;
+  max-height: 380px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border: 4px solid var(--surface-bg);
+}
+
+body.dark-mode .portfolio-card__showcase--app-frame video,
+body.dark-mode .portfolio-card__showcase--app-frame img {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Custom grid for multiple screenshots (e.g. Jobs Portal) */
+.portfolio-card__screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+.portfolio-card__screenshots-grid img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 2px solid var(--surface-bg);
+}
+
+body.dark-mode .portfolio-card__screenshots-grid img {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Right / Bottom Info Section */
+.portfolio-card__details {
+  flex: 0 0 45%;
+  width: 45%;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio-card__eyebrow {
+  font-size: 1.15rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  background: var(--brand-primary-soft);
+  color: var(--brand-primary);
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  width: fit-content;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(79, 70, 229, 0.08);
+}
+
+body.dark-mode .portfolio-card__eyebrow {
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+.portfolio-card__title {
+  font-size: 2.6rem !important;
+  font-weight: 800 !important;
+  color: var(--brand-ink);
+  line-height: 1.25;
+  margin-bottom: 1rem;
+  margin-top: 0 !important;
+}
+
+.portfolio-card__timeline {
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: var(--brand-secondary);
+  margin-bottom: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.portfolio-card__timeline::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--brand-secondary);
+  border-radius: 50%;
+}
+
+.portfolio-card__desc {
+  font-size: 1.65rem !important;
+  color: var(--brand-muted) !important;
+  line-height: 1.65 !important;
+  margin-bottom: 2.4rem;
+}
+
+.portfolio-card__desc ul {
+  padding-left: 2rem;
+  margin-top: 1rem;
+}
+
+.portfolio-card__desc li {
+  list-style-type: disc;
+  margin-bottom: 0.6rem;
+}
+
+/* Beautiful Technology Badges */
+.portfolio-card__tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 3rem;
+}
+
+.tech-badge {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--brand-muted);
+  background: var(--surface-bg-muted);
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-theme);
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.portfolio-card:hover .tech-badge {
+  border-color: rgba(99, 102, 241, 0.16);
+  color: var(--brand-primary);
+  background: var(--brand-primary-soft);
+}
+
+/* Standard Premium CTA Button Styling */
+.action-btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: auto;
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  height: 4.6rem;
+  padding: 0 2.4rem;
+  font-size: 1.45rem;
+  font-weight: 700;
+  border-radius: 999px;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s, color 0.2s;
+  cursor: pointer;
+  text-transform: none;
+  letter-spacing: 0;
+  box-shadow: none !important;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.action-btn:active {
+  transform: translateY(0);
+}
+
+/* Primary Button (Gradient Glow) */
+.action-btn--primary {
+  background: var(--brand-gradient) !important;
+  color: #ffffff !important;
+  border: 0 !important;
+  box-shadow: 0 8px 24px rgba(79, 70, 229, 0.16) !important;
+}
+
+.action-btn--primary:hover {
+  background: var(--brand-gradient-hover) !important;
+  color: #ffffff !important;
+  box-shadow: 0 12px 32px rgba(99, 102, 241, 0.3) !important;
+}
+
+/* Secondary Button (Frosted Border) */
+.action-btn--secondary {
+  background: var(--surface-bg) !important;
+  color: var(--brand-primary) !important;
+  border: 1px solid var(--border-theme) !important;
+}
+
+.action-btn--secondary:hover {
+  background: var(--brand-primary-soft) !important;
+  border-color: var(--brand-primary) !important;
+}
+
+/* Credentials Note for Spotify Clone */
+.action-btn__meta {
+  width: 100%;
+  margin-top: 1.2rem;
+  font-size: 1.25rem;
+  color: var(--brand-muted);
+  background: var(--surface-bg-muted);
+  padding: 1rem 1.4rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-theme);
+  line-height: 1.4;
+}
+
+.action-btn__meta strong {
+  color: var(--brand-primary);
+}
+
+/* Responsive Overrides for Stunning Cards */
+@media only screen and (max-width: 56.25em) {
+  .portfolio-card {
+    flex-direction: column;
+  }
+  
+  .portfolio-card__showcase {
+    flex: 0 0 100%;
+    width: 100%;
+    border-right: 0;
+    border-bottom: 1px solid var(--border-theme);
+  }
+  
+  .portfolio-card__details {
+    flex: 0 0 100%;
+    width: 100%;
+    padding: 3.2rem;
+  }
+  
+  .portfolio-card__title {
+    font-size: 2.2rem !important;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .portfolio-card__details {
+    padding: 2.4rem;
+  }
+  
+  .portfolio-card__showcase--app-frame {
+    padding: 2rem;
+  }
+  
+  .portfolio-card__showcase--app-frame video,
+  .portfolio-card__showcase--app-frame img {
+    max-height: 300px;
+  }
+  
+  .portfolio-card__screenshots-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.2rem;
+    gap: 0.8rem;
+  }
+  
+  .action-btn-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .action-btn {
+    width: 100%;
+  }
+}
+
