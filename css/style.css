@@ -1530,7 +1530,7 @@ header p {
   color: white;
 }
 
-.direction-l .flag:after,
+/* .direction-l .flag:after,
 .direction-r .flag:after {
   content: "";
   position: absolute;
@@ -1543,7 +1543,7 @@ header p {
   border-bottom-color: rgb(255, 255, 255);
   border-width: 8px;
   pointer-events: none;
-}
+} */
 
 .direction-l .flag {
   -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15),
@@ -1666,7 +1666,7 @@ header p {
   .flag {
     font-size: 2rem;
   }
-
+/* 
   .direction-l .flag:after {
     left: auto;
     right: -16px;
@@ -1684,7 +1684,7 @@ header p {
     border-right-color: rgb(254, 254, 254);
     border-width: 8px;
     left: -8px;
-  }
+  } */
 
   .time-wrapper {
     display: inline;
@@ -5936,11 +5936,11 @@ body.dark-mode .header {
   background: var(--surface-bg) !important;
 }
 
-.timeline li .direction-r .flag-wrapper .flag::after,
+/* .timeline li .direction-r .flag-wrapper .flag::after,
 .timeline li .direction-l .flag-wrapper .flag::after {
   background: var(--surface-bg) !important;
   border-color: var(--border-theme) !important;
-}
+} */
 
 .time-wrapper .time {
   background: var(--brand-primary-soft) !important;
