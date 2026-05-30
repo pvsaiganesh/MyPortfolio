@@ -4398,13 +4398,13 @@ body.dark-mode {
 }
 
 .header-contact-link:hover {
-  color: var(--text-inverse);
-  background: var(--brand-gradient);
+  color: var(--brand-primary);
+  background: var(--brand-primary-soft);
   transform: translateY(-0.2rem);
 }
 
 .header-contact-link:hover .site-icon {
-  color: var(--text-inverse);
+  color: var(--brand-primary);
 }
 
 .header__links {
@@ -6307,4 +6307,3 @@ body.dark-mode .portfolio-card__eyebrow {
     width: 100%;
   }
 }
-
