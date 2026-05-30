@@ -393,6 +393,7 @@ textarea {
   font-weight: 700;
   font-size: 2.8rem;
   margin-bottom: 3rem;
+
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -5731,6 +5732,8 @@ body.dark-mode .projects__content .row {
 #about .about__content-title {
   margin-bottom: 2rem;
   text-align: center;
+  padding-top: 10rem;
+
 }
 
 #about .about__content-skills {
