@@ -155,7 +155,7 @@ textarea {
   top: calc(100% + 1.5rem);
   height: 5px;
   width: 3rem;
-  background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+  background: black;
   border-radius: 5px;
   box-shadow: 0 2px 8px rgba(26, 115, 232, 0.3);
   left: 50%;
@@ -253,7 +253,7 @@ textarea {
 }
 
 .btn--theme {
-  background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+  background: black;
   color: #fff;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -1583,7 +1583,7 @@ header p {
 }
 
 .time {
-  background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+  background: black;
   color: #fff;
   display: inline-block;
   padding: 8px;
@@ -1812,7 +1812,7 @@ header p {
 }
 
 .btn-custom {
-  background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+  background: black;
   margin: 10px;
   padding: 15px 45px;
   text-align: center;
@@ -3016,7 +3016,7 @@ video {
   min-height: 100%;
   margin: 0;
   border-radius: 8px;
-  background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+  background: black;
   box-shadow: 0 18px 36px rgba(15, 159, 154, 0.22);
 }
 
@@ -3815,7 +3815,7 @@ a,
 .btn--theme,
 .btn-custom,
 .dark-mode .btn-custom {
-  background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue)) !important;
+  background: black !important;
   color: var(--text-inverse) !important;
   box-shadow: 0 16px 34px rgba(15, 159, 154, 0.2);
 }
@@ -4619,7 +4619,7 @@ body.dark-mode {
   --brand-ink: #f5f8ff;
   --brand-muted: #c4d4e8;
   --brand-line: rgba(255, 255, 255, 0.12);
-  --brand-gradient: linear-gradient(135deg, #1877f2, #5aa7ff);
+  --brand-gradient: black;
   --background-color-light: #0b1624;
   --text-color-light: var(--brand-ink);
   --primary-blue: var(--brand-primary);
@@ -6437,4 +6437,125 @@ body:not(.dark-mode) .header-contact-link:hover {
   .header__logo-sub {
     font-size: 1.45rem;
   }
+}
+
+/* Monochrome buttons and accent bars */
+:root {
+  --mono-control-bg: #000000;
+  --mono-control-text: #ffffff;
+  --mono-control-hover: #1f1f1f;
+  --mono-control-soft: rgba(0, 0, 0, 0.07);
+  --mono-control-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+  --brand-gradient: var(--mono-control-bg);
+  --brand-gradient-hover: var(--mono-control-hover);
+}
+
+body.dark-mode {
+  --mono-control-bg: #ffffff;
+  --mono-control-text: #000000;
+  --mono-control-hover: #f2f2f2;
+  --mono-control-soft: rgba(255, 255, 255, 0.1);
+  --mono-control-shadow: 0 8px 22px rgba(255, 255, 255, 0.12);
+  --brand-gradient: var(--mono-control-bg);
+  --brand-gradient-hover: var(--mono-control-hover);
+}
+
+.btn--theme,
+.btn--bg,
+.btn-custom,
+.hero-action,
+.action-btn,
+.contact-action,
+.contact .btn,
+.project-details__links-btn,
+.main-footer .heading-sm a {
+  background: var(--mono-control-bg) !important;
+  background-image: none !important;
+  border-color: var(--mono-control-bg) !important;
+  box-shadow: var(--mono-control-shadow) !important;
+  color: var(--mono-control-text) !important;
+}
+
+.btn--theme:hover,
+.btn--bg:hover,
+.btn-custom:hover,
+.hero-action:hover,
+.action-btn:hover,
+.contact-action:hover,
+.contact .btn:hover,
+.project-details__links-btn:hover,
+.main-footer .heading-sm a:hover {
+  background: var(--mono-control-hover) !important;
+  background-image: none !important;
+  border-color: var(--mono-control-hover) !important;
+  color: var(--mono-control-text) !important;
+}
+
+.header__link:hover,
+.header__logo-container:hover {
+  background: var(--mono-control-soft) !important;
+}
+
+.heading-sec__main::after,
+.home-hero .heading-sec__main::after,
+.home-hero section .heading-sec__main::after,
+.hero-metric::after,
+.timeline:before,
+.time,
+.battery,
+.mark,
+.projects__content .row::before,
+.about.main-container::before,
+.projects > .main-container::before,
+#work::before,
+#certificate::before,
+.hero-status-dot {
+  background: var(--mono-control-bg) !important;
+  background-image: none !important;
+}
+
+.hero-status-dot {
+  box-shadow: 0 0 0 0.55rem var(--mono-control-soft) !important;
+}
+
+.btn-custom::before,
+.btn-custom::after {
+  background: none !important;
+}
+
+.burger span {
+  background: var(--mono-control-bg) !important;
+}
+
+.network {
+  border-color: transparent transparent var(--mono-control-bg) transparent !important;
+}
+
+.time {
+  color: var(--mono-control-text) !important;
+}
+
+.header .btn,
+.header-contact-link {
+  background: transparent !important;
+  background-image: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  color: var(--text-main) !important;
+}
+
+.header-contact-link:hover {
+  background: var(--mono-control-soft) !important;
+  color: var(--text-main) !important;
+}
+
+.main-footer .heading-sm a {
+  border: 1px solid var(--mono-control-bg) !important;
+  border-radius: 8px;
+  display: inline-flex;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 1rem 1.4rem;
+  text-decoration: none !important;
 }
