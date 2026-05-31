@@ -6446,8 +6446,12 @@ body:not(.dark-mode) .header-contact-link:hover {
   --mono-control-hover: #1f1f1f;
   --mono-control-soft: rgba(0, 0, 0, 0.07);
   --mono-control-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+  --mono-control-hover-bg: #ffffff;
+  --mono-control-hover-text: #000000;
+  --mono-control-hover-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+  --mono-control-hover-ring: rgba(0, 0, 0, 0.28);
   --brand-gradient: var(--mono-control-bg);
-  --brand-gradient-hover: var(--mono-control-hover);
+  --brand-gradient-hover: var(--mono-control-hover-bg);
 }
 
 body.dark-mode {
@@ -6456,8 +6460,12 @@ body.dark-mode {
   --mono-control-hover: #f2f2f2;
   --mono-control-soft: rgba(255, 255, 255, 0.1);
   --mono-control-shadow: 0 8px 22px rgba(255, 255, 255, 0.12);
+  --mono-control-hover-bg: #000000;
+  --mono-control-hover-text: #ffffff;
+  --mono-control-hover-shadow: 0 12px 30px rgba(255, 255, 255, 0.18);
+  --mono-control-hover-ring: rgba(255, 255, 255, 0.34);
   --brand-gradient: var(--mono-control-bg);
-  --brand-gradient-hover: var(--mono-control-hover);
+  --brand-gradient-hover: var(--mono-control-hover-bg);
 }
 
 .btn--theme,
@@ -6474,6 +6482,7 @@ body.dark-mode {
   border-color: var(--mono-control-bg) !important;
   box-shadow: var(--mono-control-shadow) !important;
   color: var(--mono-control-text) !important;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
 }
 
 .btn--theme:hover,
@@ -6485,10 +6494,12 @@ body.dark-mode {
 .contact .btn:hover,
 .project-details__links-btn:hover,
 .main-footer .heading-sm a:hover {
-  background: var(--mono-control-hover) !important;
+  background: var(--mono-control-hover-bg) !important;
   background-image: none !important;
-  border-color: var(--mono-control-hover) !important;
-  color: var(--mono-control-text) !important;
+  border-color: var(--mono-control-hover-ring) !important;
+  box-shadow: var(--mono-control-hover-shadow) !important;
+  color: var(--mono-control-hover-text) !important;
+  transform: translateY(-2px);
 }
 
 .header__link:hover,
@@ -6558,4 +6569,30 @@ body.dark-mode {
   line-height: 1;
   padding: 1rem 1.4rem;
   text-decoration: none !important;
+}
+
+.example-2 .icon-content a[data-social="linkedin"],
+.example-2 .icon-content a[data-social="github"] {
+  transition: none !important;
+}
+
+.example-2 .icon-content a[data-social="linkedin"]:hover,
+.example-2 .icon-content a[data-social="github"]:hover {
+  box-shadow: 0 14px 30px rgba(24, 32, 47, 0.12) !important;
+  color: inherit !important;
+  transform: none !important;
+}
+
+.example-2 .icon-content a[data-social="linkedin"] .filled,
+.example-2 .icon-content a[data-social="github"] .filled,
+.example-2 .icon-content a[data-social="linkedin"]:hover .filled,
+.example-2 .icon-content a[data-social="github"]:hover .filled {
+  display: none !important;
+  height: 0 !important;
+}
+
+.example-2 .icon-content a[data-social="linkedin"] ~ .tooltip,
+.example-2 .icon-content a[data-social="github"] ~ .tooltip {
+  opacity: 0 !important;
+  visibility: hidden !important;
 }
