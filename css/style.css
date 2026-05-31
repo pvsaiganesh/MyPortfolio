@@ -5503,7 +5503,7 @@ body.dark-mode .hero-portrait-card {
     linear-gradient(145deg, var(--surface-bg-strong), var(--surface-bg)) !important;
   border-color: var(--premium-line) !important;
   box-shadow: 0 10px 28px rgba(24, 119, 242, 0.08) !important;
-  min-height: 11.8rem;
+  min-height: 9.8rem;
 }
 
 .skill-icon {
