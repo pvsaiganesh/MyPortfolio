@@ -6596,3 +6596,21 @@ body.dark-mode {
   opacity: 0 !important;
   visibility: hidden !important;
 }
+
+@media only screen and (max-width: 58em) {
+  .home-hero .container-fluid>.row>.row>.hero-visual {
+    order: 1 !important;
+  }
+
+  .home-hero .container-fluid>.row>.row>.col-12:not(.hero-visual) {
+    order: 2 !important;
+  }
+}
+
+.back-to-top-text {
+  color: var(--mono-control-text) !important;
+}
+
+.ul-in-hero {
+  margin-bottom: 0rem;
+}
