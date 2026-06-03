@@ -5277,8 +5277,8 @@ body {
 
   .hero-action {
     min-width: 0;
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
+    padding-left: 3.2rem;
+      padding-right: 3.2rem;
   }
 
   .hero-metrics {
@@ -6613,4 +6613,9 @@ body.dark-mode {
 
 .ul-in-hero {
   margin-bottom: 0rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .hero-portrait-card {
+    display: none !important;
+  }
 }
