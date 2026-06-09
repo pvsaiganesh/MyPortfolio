@@ -3113,7 +3113,7 @@ video {
   }
 
   .hero-portrait-card {
-    width: min(30rem, 86vw);
+    width: min(26rem, 80vw);
   }
 
   .heading-sec__mb-bg,
@@ -6616,6 +6616,7 @@ body.dark-mode {
 }
 @media only screen and (max-width: 56.25em) {
   .hero-portrait-card {
-    display: none !important;
+    display: block !important;
+      width: min(26rem, 80vw);
   }
 }
